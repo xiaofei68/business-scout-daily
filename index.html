@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商机侦察日报 · 2026-10-26</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --ink: #1f2733;
+    --sub: #5b6572;
+    --line: #e4e8ee;
+    --accent: #c2410c;
+    --accent-soft: #fff3ec;
+    --chip: #eef2f7;
+    --good: #157347;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header.hero {
+    background: linear-gradient(135deg, #1f2733 0%, #3b2f2a 60%, #7c2d12 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    margin-bottom: 24px;
+  }
+  header.hero h1 { font-size: 26px; letter-spacing: 1px; }
+  header.hero .date { opacity: .85; font-size: 14px; margin-top: 6px; }
+  .meta {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 22px;
+    font-size: 13.5px;
+    color: var(--sub);
+    margin-bottom: 28px;
+  }
+  .meta b { color: var(--ink); }
+  .meta p + p { margin-top: 6px; }
+  h2.section {
+    font-size: 19px;
+    margin: 34px 0 16px;
+    padding-left: 12px;
+    border-left: 4px solid var(--accent);
+  }
+  .op {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(31, 39, 51, .04);
+  }
+  .op .rank {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .op h3 { font-size: 18px; margin-bottom: 14px; }
+  .op ul { list-style: none; }
+  .op li {
+    padding: 7px 0 7px 96px;
+    position: relative;
+    border-bottom: 1px dashed var(--line);
+    font-size: 14.5px;
+  }
+  .op li:last-child { border-bottom: none; }
+  .op li::before {
+    content: attr(data-k);
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 84px;
+    font-size: 12.5px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .op a {
+    color: #1d4ed8;
+    text-decoration: none;
+    word-break: break-all;
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 13px;
+  }
+  .op a:hover { text-decoration: underline; }
+  .tag {
+    display: inline-block;
+    background: var(--chip);
+    color: var(--sub);
+    border-radius: 999px;
+    font-size: 12px;
+    padding: 1px 10px;
+    margin-left: 6px;
+    vertical-align: 2px;
+  }
+  .tag.hot { background: var(--accent-soft); color: var(--accent); }
+  ol.top3 {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 26px;
+    list-style: none;
+    counter-reset: t3;
+  }
+  ol.top3 li {
+    counter-increment: t3;
+    padding: 14px 0 14px 46px;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+    font-size: 14.5px;
+  }
+  ol.top3 li:last-child { border-bottom: none; }
+  ol.top3 li::before {
+    content: counter(t3);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ol.top3 b { display: block; margin-bottom: 4px; }
+  .risk {
+    margin-top: 30px;
+    background: var(--accent-soft);
+    border: 1px solid #f3cdb4;
+    color: #7c2d12;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 13.5px;
+  }
+  footer.foot {
+    margin-top: 28px;
+    text-align: center;
+    color: #9aa4b1;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>商机侦察日报</h1>
+    <div class="date">2026-10-26（UTC）· 全网扫描 9 平台 · 6 条经交叉验证的机会</div>
+  </header>
+
+  <div class="meta">
+    <p><b>扫描平台</b>：国内（小红书、抖音、知乎、B站）＋ 海外（Reddit、Product Hunt、Hacker News、YouTube）</p>
+    <p><b>采集状态</b>：抖音 ✅ · B站 ✅ · Reddit ✅（r/Entrepreneur 被限流） · Product Hunt ✅ · Hacker News ✅ · YouTube ✅ · 知乎 ✅（发现页+热搜） · 小红书 ✅（发现页） · X ❌ 需登录，本次跳过</p>
+    <p><b>数据说明</b>：所有互动数据为 2026-10-26 抓取时点真实数据；未逐一核验发布时间的 B 站搜索结果按存量内容标注；估算收益均已注明"估算"。</p>
+  </div>
+
+  <h2 class="section">机会清单（按优先级从高到低）</h2>
+
+  <div class="op">
+    <span class="rank">机会 1</span><span class="tag hot">新起量</span><span class="tag">出海</span>
+    <h3>海外智能电视「去广告 / 极简化」工具与远程代设置服务</h3>
+    <ul>
+      <li data-k="需求信号">Reddit r/SideProject 周榜帖《My parents' TV showed an ad before Netflix, so I fixed it with an AI agent. 4 days later it has 16k GitHub stars》——作者用 AI agent 远程关闭父母小米电视上 25 个广告/追踪预装应用，4 天 16k GitHub stars；Hacker News Show HN《Making a smart TV dumb and then smart》109 分 / 80 条评论（均 2026-10-26 观察）。两个独立信源指向同一爆发痛点。</li>
+      <li data-k="目标人群">海外流媒体家庭、替父母解决电视问题的子女、民宿/房东</li>
+      <li data-k="变现路径">App 一次性买断 $15–30/台；远程代设置 $20–50/单；教程流量分成。单人月入 $500–3000（估算）</li>
+      <li data-k="启动门槛">Android/ADB 调试技能；资金 &lt;1000 元；MVP 2–4 周；1 人可启动</li>
+      <li data-k="竞争情况">开源方案多、消费者级成品少，商业化窗口期；只做"关闭预装应用/系统简化"，不做破解付费内容</li>
+      <li data-k="来源链接"><a href="https://www.reddit.com/r/SideProject/comments/1xbp1be/my_parents_tv_showed_an_ad_before_netflix_so_i/" target="_blank" rel="noopener">reddit.com/r/SideProject/comments/1xbp1be</a><br><a href="https://news.ycombinator.com/item?id=50202865" target="_blank" rel="noopener">news.ycombinator.com/item?id=50202865</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 2</span><span class="tag hot">强时效</span><span class="tag">零成本</span>
+    <h3>AI 岗位秋招求职辅导与信息差知识服务（2027 届）</h3>
+    <ul>
+      <li data-k="需求信号">知乎热榜《2026 年，AI 应用落地的就业机会集中在哪些岗位？2027 届秋招应届生如何提前筹备？》与《2026 年被称为「人形机器人量产元年」，行业实际释放了哪些就业机会？》同期在榜（2026-10-26 观察）；B 站《一个人一台电脑就能过上躺平人生？》732.9 万播放、《避开内卷！这些没人瞧得上的副业》573.6 万播放（存量爆款）；YouTube《3个冷门却好赚的AI小生意…241个粉丝变现30万》本周 4.3 万播放。</li>
+      <li data-k="目标人群">2027 届应届生、想转入 AI 岗位的 1–3 年在职者</li>
+      <li data-k="变现路径">1v1 咨询 100–300 元/小时；简历项目包装 99–299 元/份；信息库订阅 9.9–29.9 元/月。兼职月入 3000–20000 元（估算）</li>
+      <li data-k="启动门槛">需真实 AI 行业认知；资金 &lt;500 元；起号 1–2 周；1 人可启动</li>
+      <li data-k="竞争情况">传统求职中介多而杂，"AI 岗垂直"细分供给少；秋招进行中，窗口约 1–2 个月</li>
+      <li data-k="来源链接"><a href="https://www.zhihu.com/question/2096642243792847600" target="_blank" rel="noopener">zhihu.com/question/2096642243792847600</a><br><a href="https://www.zhihu.com/question/2096642243713148200" target="_blank" rel="noopener">zhihu.com/question/2096642243713148200</a><br><a href="https://www.bilibili.com/video/BV1RN4y117Lo/" target="_blank" rel="noopener">bilibili.com/video/BV1RN4y117Lo</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 3</span><span class="tag">现金流</span><span class="tag">本地服务</span>
+    <h3>帮本地餐饮小店做自营点餐与会员私域（逃离外卖平台抽佣）</h3>
+    <ul>
+      <li data-k="需求信号">Reddit r/SideProject 周榜帖《I made a pizzeria its own ordering app so regulars stop paying DoorDash 30%. First paying customer is live》——披萨店月外卖流水 $8k 约 $2k 被平台抽走，自营工具已获首个付费客户（2026-10-26 观察）；B 站《美团外卖到底抽成有多恐怖？》《每单抽成20%，外卖平台赚疯了？》等商家侧吐槽长期高播放（存量内容）。</li>
+      <li data-k="目标人群">月流水 1–10 万元的夫妻餐饮店、社区快餐/烘焙/水果店</li>
+      <li data-k="变现路径">小程序搭建+代运营年费 2000–5000 元/店，10 家店 2–5 万元/年，续费型现金流</li>
+      <li data-k="启动门槛">低代码小程序 + 地推能力；资金 &lt;5000 元；首店 2–4 周；1–2 人可启动</li>
+      <li data-k="竞争情况">大厂方案贵且重，小店轻量定制有空间；中等烈度，靠本地服务取胜</li>
+      <li data-k="来源链接"><a href="https://www.reddit.com/r/SideProject/comments/1xase0i/i_made_a_pizzeria_its_own_ordering_app_so/" target="_blank" rel="noopener">reddit.com/r/SideProject/comments/1xase0i</a><br><a href="https://www.bilibili.com/video/BV1ww411M7nA/" target="_blank" rel="noopener">bilibili.com/video/BV1ww411M7nA</a><br><a href="https://www.bilibili.com/video/BV1XS4y1z7qq/" target="_blank" rel="noopener">bilibili.com/video/BV1XS4y1z7qq</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 4</span><span class="tag">出海</span><span class="tag">微SaaS</span>
+    <h3>浏览器插件 / 桌面微工具独立开发（订阅或买断制）</h3>
+    <ul>
+      <li data-k="需求信号">Reddit r/passive_income 周榜帖《Got my first real passive income after years of trying》——作者 Kindle/Dropshipping 屡败后靠 Chrome 扩展 SeeThePoints 首次获得被动收入（2026-10-26 观察）；Hacker News 首页《Overgrown, when plants invade your abandoned tabs》226 分；Product Hunt 10/25：Badgey 208 票、pawl 105 票——"小工具上榜单"路径本月多次验证。</li>
+      <li data-k="目标人群">海外效率工具与细分场景用户（Chrome 商店 / PH 分发）</li>
+      <li data-k="变现路径">订阅 $2–5/月或买断 $9–19；单插件 $500–5000/月（估算）</li>
+      <li data-k="启动门槛">前端基础；资金 &lt;500 元；MVP 1–2 周；1 人可启动</li>
+      <li data-k="竞争情况">通用场景饱和，需"细分人群×具体场景"差异化</li>
+      <li data-k="来源链接"><a href="https://www.reddit.com/r/passive_income/comments/1xaytg3/got_my_first_real_passive_income_after_years_of/" target="_blank" rel="noopener">reddit.com/r/passive_income/comments/1xaytg3</a><br><a href="https://charliegerard.dev/blog/overgrown-extension/" target="_blank" rel="noopener">charliegerard.dev/blog/overgrown-extension</a><br><a href="https://www.producthunt.com/leaderboard/daily/2026/10/25" target="_blank" rel="noopener">producthunt.com/leaderboard/daily/2026/10/25</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 5</span><span class="tag">开发者向</span><span class="tag">高门槛</span>
+    <h3>AI Agent 周边开发者工具（开源获客 + Pro 托管）</h3>
+    <ul>
+      <li data-k="需求信号">Product Hunt 10/25 日榜：Moli（Agent 专用无头浏览器）#1 共 276 票、AgentGrid.io 184 票、Papermark Data Rooms 107 票（2026-10-26 观察）；Hacker News：《The State of Context Engineering》140 分、Show HN《Corgi》138 分/46 评论、《Omnara》114 分（均为近期发布）。</li>
+      <li data-k="目标人群">独立开发者、Agent 应用构建者</li>
+      <li data-k="变现路径">开源 + 托管订阅 $10–49/月；$1000–10000 MRR（估算，达 PMF 后）</li>
+      <li data-k="启动门槛">较强工程能力；资金 &lt;5000 元；周期 3–4 周；1–2 人可启动</li>
+      <li data-k="竞争情况">烈——大厂与开源社区涌入，须选极细分切入点</li>
+      <li data-k="来源链接"><a href="https://www.producthunt.com/leaderboard/daily/2026/10/25" target="_blank" rel="noopener">producthunt.com/leaderboard/daily/2026/10/25</a><br><a href="https://corgi.computer/" target="_blank" rel="noopener">corgi.computer</a><br><a href="https://github.com/omnara-ai/omnara" target="_blank" rel="noopener">github.com/omnara-ai/omnara</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 6</span><span class="tag">窗口期</span><span class="tag">数字产品</span>
+    <h3>新模型发布窗口期的垂直 AI 实操数字产品（Gemini 3 / Kimi K3.1）</h3>
+    <ul>
+      <li data-k="需求信号">YouTube《Google Gemini 3 全能使用手册》8.7 万播放（近 1 个月）、《Gemini+NotebookLM最核心5个赚钱商机》4.6 万播放（2026-10-26 观察，本周播放量前列）；知乎热搜《Kimi K3.1 Pro 正式发布》热度 271 万。正处 Gemini 3 / Kimi K3.1 双发布窗口的"怎么用"内容真空期。</li>
+      <li data-k="目标人群">想用 AI 提效的职场人、大学生、自媒体创作者</li>
+      <li data-k="变现路径">提示词/工作流模板包 9.9–99 元；小专栏 19.9–69 元；流量分成。单窗口期 2000–20000 元（估算）</li>
+      <li data-k="启动门槛">低–中；资金 &lt;500 元；1–2 周起量；1 人可启动</li>
+      <li data-k="竞争情况">泛"AI 赚钱"教程泛滥（按去重规则下调优先级）；仅"首发 72 小时 + 垂直场景"仍有信息差红利</li>
+      <li data-k="来源链接"><a href="https://www.youtube.com/watch?v=RBbvc1Ap9gk" target="_blank" rel="noopener">youtube.com/watch?v=RBbvc1Ap9gk</a><br><a href="https://www.youtube.com/watch?v=oqSoetslbdA" target="_blank" rel="noopener">youtube.com/watch?v=oqSoetslbdA</a></li>
+    </ul>
+  </div>
+
+  <h2 class="section">Top 3 推荐及理由</h2>
+  <ol class="top3">
+    <li><b>机会 1 · 海外智能电视去广告工具/代设置</b>Reddit（4 天 16k stars）与 HN（109 分/80 评论）双平台独立验证，痛点真实爆发；商业化成品少、窗口期明确；单人 &lt;1000 元、2–4 周即可出 MVP，最符合"低成本快启动 + 新起量"标准。</li>
+    <li><b>机会 2 · AI 岗秋招辅导</b>知乎热榜双问题在榜 + 国内视频平台副业内容数百万播放交叉验证；零成本知识服务，1–2 周可起号变现；秋招进行中，时效即护城河。</li>
+    <li><b>机会 3 · 小店自营点餐私域</b>海外（DoorDash 抽佣故事已跑通付费）与国内（美团抽佣吐槽长期高热）双重验证；年费续费型现金流，不依赖流量爆红，适合 1–2 人本地冷启动。</li>
+  </ol>
+
+  <div class="risk">
+    <b>风险提示</b>：本报告仅为公开信息挖掘整理，不构成任何投资建议，请你自行核验真实性、风险以及合规性。
+  </div>
+
+  <footer class="foot">商机侦察日报 · 由商机雷达自动生成 · 2026-10-26</footer>
+</div>
+</body>
+</html>
