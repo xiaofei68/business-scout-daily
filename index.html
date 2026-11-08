@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商机侦察日报 · 2026-11-07</title>
+<title>商机侦察日报 · 2026-11-08</title>
 <style>
   :root {
     --bg: #f6f7f9;
@@ -132,124 +132,136 @@
     top: 14px;
     width: 30px;
     height: 30px;
-    border-radius: 8px;
+    border-radius: 50%;
     background: var(--accent);
     color: #fff;
     font-weight: 700;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  ol.top3 b { display: block; margin-bottom: 4px; }
   .risk {
-    margin-top: 30px;
     background: var(--accent-soft);
-    border: 1px solid #f3cdb4;
+    border: 1px solid #f3c9a8;
     color: #7c2d12;
     border-radius: 12px;
     padding: 16px 20px;
-    font-size: 13.5px;
+    font-size: 14px;
+    margin-top: 30px;
   }
   footer.foot {
-    margin-top: 28px;
     text-align: center;
-    color: #9aa4b1;
-    font-size: 12px;
+    color: var(--sub);
+    font-size: 12.5px;
+    margin-top: 28px;
   }
+  .dedup {
+    background: var(--card);
+    border: 1px dashed var(--line);
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 13.5px;
+    color: var(--sub);
+    margin: 18px 0;
+  }
+  .dedup b { color: var(--ink); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
     <h1>商机侦察日报</h1>
-    <div class="date">2026-11-07（北京时间）· 全网扫描 9 平台 · 6 条经交叉验证的机会</div>
+    <div class="date">2026-11-08 · 全网扫描 9 大平台 · 自动生成</div>
   </header>
+
   <div class="meta">
-      <p><b>扫描平台</b>：国内（小红书、抖音、知乎、B 站）＋ 海外（Reddit、X、Product Hunt、Hacker News、YouTube）</p>
-      <p><b>采集状态</b>：知乎 ✅（移动端热榜 API 30 条，热度值真实） · B 站 ✅（热门视频 API 20 条，播放/点赞真实） · 抖音 ✅（公开热搜 API 25 条，热度值真实） · 小红书 ⚠️ 部分成功（发现页公开信息流 30 条含真实点赞；搜索强制登录墙，本机浏览器无登录态，未采集搜索数据） · Reddit ✅（r/Entrepreneur、r/passive_income 周榜 RSS 各 10 条；JSON 接口被风控、r/SideProject 与 r/SaaS 两次重试失败；RSS 无互动数，相关数据已标注未验证） · Hacker News ✅（Algolia API 头版 30 条＋话题检索，分值/评论数真实） · Product Hunt ✅（浏览器桥接 11-06 日榜＋TOP5 产品详情，票数真实抓取） · YouTube ✅（站内搜索初始数据通道 2 组关键词，播放数真实） · X ❌ 访问失败（浏览器无登录态，搜索页强制跳转登录，本次暂未采集该平台数据）</p>
-      <p><b>数据说明</b>：所有互动数据为 2026-11-07 08:05–08:20（北京时间）抓取时点真实数据；收益量级与客单价除注明出处外均为「估算」；每条机会均经 ≥2 个平台独立验证；失败平台如实标注，无编造数据。</p>
-    </div>
+    <p><b>采集范围：</b>国内（小红书、抖音、知乎、B站）＋海外（Reddit、X、Product Hunt、Hacker News、YouTube，经 Clash 代理）</p>
+    <p><b>采集状态：</b>9/9 平台完成采集。小红书（公开发现页，搜索需登录态未采集）、Reddit（RSS 可得帖子列表，互动数被网络策略拦截、标注未验证）、X（trends24 公开趋势 + 站外检索，站内需登录）、YouTube（官方已下线 Trending 页，改用关键词搜索采样）。</p>
+    <p><b>数据口径：</b>标注「抓取」为本次直接抓到的真实数据；标注「估算/未验证」为推断或无法核验项。观察日期均为 2026-11-08（Product Hunt 日榜为 11-07 数据）。</p>
+    <p><b>筛选标尺：</b>1–2 人可启动、启动资金＜5,000 元、落地周期≤30 天；每条机会至少 2 个平台交叉验证。</p>
+  </div>
+
   <h2 class="section">机会清单（按优先级从高到低）</h2>
+
   <div class="op">
-      <span class="rank">机会 1</span><span class="tag hot">今日最强</span><span class="tag hot">政策×内容双催化</span><span class="tag hot">三平台共振</span>
-      <h3>短剧新规窗口：真人短剧承制缺口 × AI 短剧模板化服务——广电重申扶持真人短剧、规范 AI 短剧登知乎热榜第一（445 万热度）</h3>
-      <ul>
-        <li data-k="需求信号">知乎热榜（2026-11-07 API 抓取）：《如何看待广电总局重申未来将把重点放在扶持真人短剧，以及规范 AI 短剧？》热度 445 万，居榜首；《看完 AI 仿真人剧〈持械入宋〉，感觉技术上并没有很高壁垒，实拍难度也不大》热度 169 万——政策把「真人短剧供给缺口」与「AI 短剧合规化」两个方向同时打开。B 站（2026-11-07 API 抓取）：《假如短剧是违禁品📱》391,072 播放/44,888 赞——短剧话题大众热度仍在。小红书发现页（2026-11-07 抓取）：「AI 届最会跳舞的女主」5,395 赞——AI 虚拟人物内容持续起量。</li>
-        <li data-k="目标人群">短剧平台方与 MCN（承制缺口）、网文作者（IP 改编需求）、品牌方（定制短剧）、想入行的剪辑师与写手</li>
-        <li data-k="变现路径">① AI 短剧制作模板＋素材包 99–499 元（估算）；② 短剧剪辑/投流素材代做 500–3,000 元/集（估算）；③ 小体量真人短剧承制 3–30 万/部（估算，需 2 人以上小团队）；估算月 0.5–5 万元</li>
-        <li data-k="启动门槛">技能＝剪辑＋AI 视频工具（可灵/即梦/Runway 类）；资金＜3,000 元；模板/代做 7–14 天首单；1–2 人可启动</li>
-        <li data-k="竞争情况">承制端红海，但「合规化 AI 短剧模板/工具化」供给刚起步；政策落地期存在信息差窗口；风险：监管细则未明，AI 短剧方向需紧跟平台规范，真人承制方向更稳</li>
-        <li data-k="来源链接"><a href="https://www.zhihu.com/question/2101979474723960031" target="_blank" rel="noopener">zhihu.com 广电重申扶持真人短剧规范AI短剧（热榜第1·445万热度）</a><br><a href="https://www.zhihu.com/question/2101987202196400085" target="_blank" rel="noopener">zhihu.com AI仿真人剧《持械入宋》讨论（169万热度）</a><br><a href="https://www.bilibili.com/video/BV1ae4q6fEis" target="_blank" rel="noopener">bilibili.com 假如短剧是违禁品（39.1万播放/4.5万赞）</a><br><a href="https://www.xiaohongshu.com/explore/6ac8ea12000000001a021265" target="_blank" rel="noopener">xiaohongshu.com AI届最会跳舞的女主（5,395赞）</a></li>
-      </ul>
-    </div>
-<div class="op">
-      <span class="rank">机会 2</span><span class="tag hot">全球性趋势</span><span class="tag hot">中文市场空窗</span><span class="tag">B2B付费明确</span>
-      <h3>AEO/GEO（AI 搜索可见性）监测工具与优化服务：PH 日榜第 3 名 Rankfender 650 票验证方向，HN「AI Overviews 砍半搜索点击」758 分＋德国判决 1021 分长尾发酵</h3>
-      <ul>
-        <li data-k="需求信号">Product Hunt 11-06 日榜（浏览器抓取）：Rankfender v3.0 以 650 票列第 3——全功能 SEO 套件主打「AI Overviews 排名追踪」，说明品牌方愿为 AI 搜索可见性付费。Hacker News（2026-11-07 Algolia 检索）：《AI overviews cause massive drop in search clicks》758 分/845 评论；《German ruling declares Google liable for false answers in AI Overviews》1021 分/552 评论——AI 搜索冲击传统流量成全球站长/品牌长期痛点。</li>
-        <li data-k="目标人群">独立站与跨境卖家、内容站长、出海品牌与本地服务商</li>
-        <li data-k="变现路径">① 监测 SaaS 订阅 $19–49/月（估算）；② AI 可见性一次性审计＋结构化改造 2,000–8,000 元/单（估算）；估算月 0.5–3 万元</li>
-        <li data-k="启动门槛">技能＝SEO 基础＋脚本调用 LLM API 批量查询；资金＜500 元（API 成本）；MVP 2–4 周；1 人可启动</li>
-        <li data-k="竞争情况">海外 Ahrefs/Semrush 等巨头正补 AI 功能，海外红海化中；中文区 AEO 垂类工具与服务基本空白（判断），先发可占心智；风险：谷歌/百度 AI 摘要规则持续变动，需快速迭代</li>
-        <li data-k="来源链接"><a href="https://www.producthunt.com/products/rankfender" target="_blank" rel="noopener">producthunt.com Rankfender v3.0（650票·11-06日榜第3）</a><br><a href="https://arstechnica.com/ai/2025/07/research-shows-google-ai-overviews-reduce-website-clicks-by-almost-half/" target="_blank" rel="noopener">arstechnica.com AI Overviews砍半搜索点击（HN 758分/845评论）</a><br><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank" rel="noopener">the-decoder.com 德国判决Google为AI错误答案担责（HN 1021分/552评论）</a></li>
-      </ul>
-    </div>
-<div class="op">
-      <span class="rank">机会 3</span><span class="tag hot">PH榜眼验证</span><span class="tag hot">开发者自付费</span><span class="tag">indie SaaS</span>
-      <h3>AI 用量成本优化/多模型路由微工具出海：Turnstone「订阅满载自动切换」1400 票登 PH 榜眼，HN「4 倍低成本跑出 Opus 精度」279 分，Reddit 创业圈热议 AI 产品单位经济模型</h3>
-      <ul>
-        <li data-k="需求信号">Product Hunt 11-06 日榜（浏览器抓取）：Turnstone 以 1,400 票列第 2——「用你已有的 AI 订阅/API Key/自托管模型，一个到达限额自动切换下一个」，上线即验证付费意愿。Hacker News 头版（2026-11-07 API）：《A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost》279 分/61 评论；《Replit rebuilt its sandbox engine with microVMs》24 分——AI 成本工程成显性话题。Reddit r/Entrepreneur 周榜（2026-11-07 RSS）：《Anyone here actually showing positive unit economics on an AI product after 12+ months?》在榜（互动数 RSS 未返回，未验证）——AI 产品成本焦虑是创业者持续痛点。</li>
-        <li data-k="目标人群">AI 重度独立开发者、AI SaaS 小团队、Agent 工作流用户（全球市场）</li>
-        <li data-k="变现路径">买断 $19–39 或订阅 $5–15/月（估算）；niche 月营收 $200–2,000（估算）</li>
-        <li data-k="启动门槛">技能＝全栈开发＋LLM API；资金＜500 元；MVP 2–3 周；1 人可启动</li>
-        <li data-k="竞争情况">赛道上升期、格局未定，Turnstone 已验证需求但切入角度分散（成本审计/路由切换/评测比对多入口）；风险：迭代速度快、巨头（OpenRouter 等）可能下沉，宜快做快收细分场景</li>
-        <li data-k="来源链接"><a href="https://www.producthunt.com/products/turnstone" target="_blank" rel="noopener">producthunt.com Turnstone（1400票·11-06日榜第2）</a><br><a href="https://hightouch.com/blog/llm-judges-identity-resolution" target="_blank" rel="noopener">hightouch.com Jev求助Opus·4倍低成本（HN 279分/61评论）</a><br><a href="https://www.reddit.com/r/Entrepreneur/comments/1xkjo23/anyone_here_actually_showing_positive_unit/" target="_blank" rel="noopener">reddit.com r/Entrepreneur AI产品单位经济模型讨论（本周周榜）</a></li>
-      </ul>
-    </div>
-<div class="op">
-      <span class="rank">机会 4</span><span class="tag hot">当天可启动</span><span class="tag hot">暴雪即时节点</span><span class="tag">季节性项目</span>
-      <h3>冬季暴雪节点实物带货：抖音热搜「立冬」1025 万、「费尔岛毛衣」881 万、「羽绒服」867 万、「入冬九件套」856 万，华北暴雪预警双上榜，知乎棉服科普 100 万热度佐证决策期</h3>
-      <ul>
-        <li data-k="需求信号">抖音热搜榜（2026-11-07 公开 API，热度值真实抓取）：「今日立冬积极过冬」10,258,784、「又到穿费尔岛的季节了」8,811,322、「降温了羽绒服先穿为敬」8,669,900、「好闺闺都要吃的入冬九件套」8,567,494、「华北北部将现大到暴雪」7,839,753、「北京发布暴雪黄色预警」7,795,371——季节＋极端天气双节点。知乎热榜（2026-11-07 API）：「为什么现在的棉服填充物都是聚酯纤维而不是棉花」热度 100 万——保暖服装消费决策话题进入大众视野。</li>
-        <li data-k="目标人群">北方与降温地区消费者、年轻女性、家庭采购人群</li>
-        <li data-k="变现路径">抖音/小红书橱窗＋图文种草带货，佣金 15–30%，客单 100–500 元（估算）；起号首月 1,000–10,000 元（估算）</li>
-        <li data-k="启动门槛">技能＝选品＋图文/短视频制作；资金＜2,000 元（样品）；1–3 天起号；1 人可启动</li>
-        <li data-k="竞争情况">季节性红海、年年轮回（按去重规则优先级已下调），但「暴雪预警」极端天气节点有即时流量窗口；差异化细分（大码羽绒服/宠物保暖/通勤防泼水）竞争更小</li>
-        <li data-k="来源链接"><a href="https://www.douyin.com/hot" target="_blank" rel="noopener">douyin.com/hot 抖音热榜公开页（热搜词条与热度值同源抓取）</a><br><a href="https://www.zhihu.com/question/1975538469355934272" target="_blank" rel="noopener">zhihu.com 棉服填充物科普（100万热度）</a></li>
-      </ul>
-    </div>
-<div class="op">
-      <span class="rank">机会 5</span><span class="tag hot">双平台交叉</span><span class="tag">全球市场</span><span class="tag">买断制现金流</span>
-      <h3>Mac 微型付费工具 App（触控板/菜单栏/效率微创新）：EdgeBar 把触控板边缘变成音量亮度滑条获 PH 日榜第 4（400 票），Reddit 独立开发者 2 个月首款 Mac 工具回款实录登周榜</h3>
-      <ul>
-        <li data-k="需求信号">Product Hunt 11-06 日榜（浏览器抓取）：EdgeBar 400 票列第 4——「MacBook 触控板边缘滑动调音量/亮度＋触觉反馈」，证明硬件细节交互微创新能出榜。Reddit r/passive_income 周榜（2026-11-07 RSS）：《Got my First 164$ for my Utility MacBook App in 2 months!!!》（互动数 RSS 未返回，未验证）——个人开发者 Mac 工具变现路径被社区关注。</li>
-        <li data-k="目标人群">全球 Mac 开发者/设计师/效率工具党</li>
-        <li data-k="变现路径">买断 $5–15/份（估算）；单款月 $50–500（估算）；可申请 Setapp 分发扩收入</li>
-        <li data-k="启动门槛">技能＝Swift/AppKit 基础；资金＝$99/年开发者账号＋＜500 元；一款 2–4 周；1 人可启动</li>
-        <li data-k="竞争情况">长尾分散、无垄断；靠场景微创新＋Product Hunt 冷启动；风险：单款天花板低，需小步快跑多款试错</li>
-        <li data-k="来源链接"><a href="https://www.producthunt.com/products/edgebar" target="_blank" rel="noopener">producthunt.com EdgeBar（400票·11-06日榜第4）</a><br><a href="https://www.reddit.com/r/passive_income/comments/1xlo8jp/got_my_first_164_for_my_utility_macbook_app_in_2/" target="_blank" rel="noopener">reddit.com 首款Mac工具App 2个月$164实录（本周周榜）</a></li>
-      </ul>
-    </div>
-<div class="op">
-      <span class="rank">机会 6</span><span class="tag">双平台交叉</span><span class="tag">订阅制</span><span class="tag">差异化方向新</span>
-      <h3>游戏化记账/理财养成 App（cozy 像素风）：Reddit 独立开发者把股息追踪做成「像素农场」登周榜，YouTube「我研究了 500+ 游戏化 App」24.1 万播放验证方法论受众</h3>
-      <ul>
-        <li data-k="需求信号">Reddit r/passive_income 周榜（2026-11-07 RSS）：《Dividends are the only truly passive income, but the early stages feel slow — so I turned tracking them into a cozy pixel farm》（互动数 RSS 未返回，未验证）——用游戏化解决「理财前期反馈慢」的留存痛点。YouTube（2026-11-07 抓取）：《I Studied 500+ Gamified Apps (Here's What Actually Works)》241,469 播放（约 5 个月前发布）——游戏化设计内容有稳定受众。</li>
-        <li data-k="目标人群">Z 世代理财新手、习惯养成与自我量化用户</li>
-        <li data-k="变现路径">免费＋订阅 $2–5/月（估算）；网页版 MVP 先验证再上移动端</li>
-        <li data-k="启动门槛">技能＝前端开发＋游戏化设计感；资金＜1,000 元；30 天 MVP；1–2 人可启动</li>
-        <li data-k="竞争情况">记账赛道红海但「情感化/游戏化」差异方向仍新（该 Reddit 帖即是独立开发者在做）；核心难点是长期留存，需强反馈机制设计</li>
-        <li data-k="来源链接"><a href="https://www.reddit.com/r/passive_income/comments/1xmre5x/dividends_are_the_only_truly_passive_income_but/" target="_blank" rel="noopener">reddit.com 股息追踪做成像素农场（本周周榜）</a><br><a href="https://youtu.be/LXX_qOA5D8E" target="_blank" rel="noopener">youtu.be 我研究了500+游戏化App（24.1万播放）</a></li>
-      </ul>
-    </div>
+    <span class="rank">机会 1</span><span class="tag hot">新事件窗口</span><span class="tag">企业服务</span><span class="tag">带截止日期的强制需求</span>
+    <h3>扣子（Coze）企业版分阶段停服 → 企业智能体「搬家」服务：Dify 私有化部署＋工作流重建＋数据迁移</h3>
+    <ul>
+      <li data-k="需求信号">知乎热榜在榜问题「怎么看字节跳动的扣子宣布下线解散，AI 工作流是不是已经没有市场了？」（2026-11-08 抓取，热度值未验证）；腾讯云开发者社区通告：扣子企业版分阶段下线——2026-11-30 起企业标准版/旗舰版停止新客，2027-12-31 全面停服；36kr 同步报道「字节扣子、腾讯元器接连下线：大厂 AI 产品洗牌清退潮」——存量客户面临强制性迁移。</li>
+      <li data-k="目标人群">已用扣子/元器搭建客服、内容生成、营销智能体的中小企业、MCN 与代运营团队</li>
+      <li data-k="变现路径">一次性迁移重建 3,000–20,000 元/项目（估算）；后续私有化运维订阅 500–2,000 元/月（估算）</li>
+      <li data-k="启动门槛">技能＝Dify/工作流编排＋基础服务器部署；资金＜2,000 元（演示环境）；首单 1–2 周；1–2 人可启动</li>
+      <li data-k="竞争情况">Dify 生态有服务商，但「停服迁移」是带截止日期的新事件窗口，供给尚未专门化；风险：知乎同步出现「AI 工作流没市场」的质疑情绪，应筛选有真实存量业务的客户，避开纯尝鲜型</li>
+      <li data-k="来源链接"><a href="https://www.zhihu.com/question/2101391707430565604" target="_blank" rel="noopener">zhihu.com 扣子下线解散热榜问题（2026-11-08 在榜）</a><br><a href="https://developer.cloud.tencent.com/article/2773699" target="_blank" rel="noopener">腾讯云开发者社区：扣子企业版正式下线时间表</a><br><a href="https://m.36kr.com/p/4055286987838595" target="_blank" rel="noopener">36kr：字节扣子、腾讯元器接连下线清退潮</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 2</span><span class="tag hot">双平台交叉</span><span class="tag">事件热度期</span><span class="tag">零成本启动</span>
+    <h3>AI 代码仓库密钥泄露「安全体检」：面向独立开发者/小团队的 GitHub 仓库扫描＋加固报告服务</h3>
+    <ul>
+      <li data-k="需求信号">Hacker News 头版（2026-11-08 抓取）：「Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files」106 分/74 评论——安全厂商 apiiro 实测披露 AI 编程智能体导致密钥大规模外泄；同日 Product Hunt 11-07 日榜第 3 名 LiveReview「Free, Risk-Aware Code Review」181 票——AI 代码审查方向当天即获强验证。</li>
+      <li data-k="目标人群">重度使用 Claude Code/Cursor/DeepSeek Harness 的独立开发者、外包小团队、已上线 AI 生成代码的 SaaS 团队</li>
+      <li data-k="变现路径">单仓安全体检 199–999 元/次（估算）；月度监控订阅 99–299 元/月（估算）；泄露事件热度期获客成本低</li>
+      <li data-k="启动门槛">技能＝Git＋基础安全知识（gitleaks/trufflehog 等开源工具链）；资金≈0；一周内可上线服务页；1 人可启动</li>
+      <li data-k="竞争情况">专业安全公司客单价高、不下沉个人开发者；开源扫描器免费但「不会配、没时间看报告」——服务化空间在「扫描＋人话报告＋修复清单」打包；先发优势在事件热度窗口</li>
+      <li data-k="来源链接"><a href="https://news.ycombinator.com/item?id=50407882" target="_blank" rel="noopener">news.ycombinator.com Claude Code 泄露密码讨论（106 分/74 评论）</a><br><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank" rel="noopener">apiiro.com 1,122 个公开仓库密钥泄露实测报告</a><br><a href="https://www.producthunt.com/products/livereview" target="_blank" rel="noopener">producthunt.com LiveReview（181 票·11-07 日榜第 3）</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 3</span><span class="tag hot">政策东风</span><span class="tag">数字产品</span><span class="tag">内容广告</span>
+    <h3>教师 AI 备课「减负」实测内容＋学科课件模板/校本微培训：教育部 AI 全员培训落地期的信息差生意</h3>
+    <ul>
+      <li data-k="需求信号">知乎热榜（2026-11-08 抓取）：「教育部推行教师 AI 全覆盖培训，部分教师却表示『越用 AI 反而越累』」；凤凰网 2026-10-14 辟谣「禁止教师用 AI 备课」系误读——教师群体政策信息差巨大；第三方「2026 年最适合教师的 AI 工具实测」类内容近期密集出现（kuse.ai 等多篇盘点）。背景数据：B 站全站排行榜（2026-11-08 抓取）考研英语晓燕单条 214.5 万播放/26.9 万赞——教育内容消费热度高。</li>
+      <li data-k="目标人群">中小学一线教师、备课组长、教师进修学校与培训机构</li>
+      <li data-k="变现路径">学科课件/教案 AI 模板包 9.9–99 元（估算）；校本/区域微培训 1,000–5,000 元/场（估算）；图文视频内容广告分成</li>
+      <li data-k="启动门槛">技能＝教学经验＋熟练 2–3 款 AI 工具；资金＜500 元；1 周起更内容；1 人可启动</li>
+      <li data-k="竞争情况">工具厂商官方教程多，但「越用越累」的落地痛点未被解决——空档在「按学科、按课型」的可直接套用模板，而非泛泛的工具介绍；先切一个细分学科做深更易突围</li>
+      <li data-k="来源链接"><a href="https://www.zhihu.com/question/2101733537099559120" target="_blank" rel="noopener">zhihu.com 教师 AI 全覆盖培训热榜问题（2026-11-08 在榜）</a><br><a href="https://feng.ifeng.com/c/8xE0WlFkROe" target="_blank" rel="noopener">ifeng.com 「禁止教师用AI备课」系误读（2026-10-14）</a><br><a href="https://www.kuse.ai/zh-cn/ai-tools/best-ai-tools-for-teachers" target="_blank" rel="noopener">kuse.ai 2026 年教师 AI 工具实测盘点</a><br><a href="https://www.bilibili.com/video/BV1LX4b6yEax" target="_blank" rel="noopener">bilibili.com 考研英语视频（214.5 万播放·全站榜抓取）</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 4</span><span class="tag">三平台交叉</span><span class="tag">数字产品</span><span class="tag">新展节点红利</span>
+    <h3>文博深度游「研学手册/路线定制」数字产品：海昏侯简牍上新与入境游话题共振下的博物馆内容生意</h3>
+    <ul>
+      <li data-k="需求信号">小红书发现页（2026-11-08 抓取公共推荐流）：《文科生的天塌了，继〈论语〉更新后，〈诗经〉也迎来了更新…海昏侯 刘贺 博物馆》登上推荐流——简牍上新带动博物馆打卡兴趣（互动数公共流未展示、未验证）；知乎热榜同日问题「中国有没有那种中国人不怎么去、但外国人却很喜欢去的古迹?」；B 站全站榜人文历史类「只有站对角度，才能看见消失的孩子！」650.8 万播放/36.9 万赞（2026-11-08 抓取）。</li>
+      <li data-k="目标人群">亲子家庭、历史爱好者、入境自由行游客、研学机构</li>
+      <li data-k="变现路径">单馆深度研学手册/盖章攻略 PDF 9.9–39.9 元（估算）；定制路线 199–599 元/单（估算）；内容广告＋讲解器/门票 referral</li>
+      <li data-k="启动门槛">技能＝资料考据＋图文排版；资金＜1,000 元（实地素材采集）；首个手册 1–2 周；1 人可启动</li>
+      <li data-k="竞争情况">博物馆热已持续两年、泛攻略内容多，但「成体系、可打印、带任务设计」的研学手册仍是空档；绑定「新展开幕」节点（如海昏侯简牍上新）有确定性流量红利</li>
+      <li data-k="来源链接"><a href="https://www.xiaohongshu.com/explore/6acad912000000001b02c6eb" target="_blank" rel="noopener">xiaohongshu.com 海昏侯〈诗经〉更新笔记（2026-11-08 推荐流）</a><br><a href="https://www.zhihu.com/question/2098824135749194619" target="_blank" rel="noopener">zhihu.com 外国人喜欢去的古迹热榜问题（2026-11-08 在榜）</a><br><a href="https://www.bilibili.com/video/BV1B54G6vEfm" target="_blank" rel="noopener">bilibili.com 人文历史视频（650.8 万播放/36.9 万赞·全站榜）</a></li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="rank">机会 5</span><span class="tag">双平台交叉</span><span class="tag">全球市场</span><span class="tag">服务型轻资产</span>
+    <h3>出海独立开发者「前 100 个用户」冷启动包：Product Hunt 发布代运营＋首发文案/冲榜清单</h3>
+    <ul>
+      <li data-k="需求信号">Reddit r/SideProject 日榜（2026-11-08 RSS 抓取）：《How did you get your first 100 users for your app?》活跃讨论中，同期《My side-project made USD 1,500+ in sales》《We celebrated 250 users yesterday》多帖同题共振（RSS 不返回互动数，未验证）；Product Hunt 11-07 日榜头部单日 510/226/182 票——每天数百款产品首发，冷启动是共性刚需。</li>
+      <li data-k="目标人群">有产品没流量的出海独立开发者、1–3 人小团队</li>
+      <li data-k="变现路径">单次 PH 发布代运营/文案包 $99–299（估算）；冷启动 SOP＋模板包 $19–49（估算）</li>
+      <li data-k="启动门槛">技能＝英文营销文案＋PH 发布规则；资金≈0；1–2 周可交付首个案例；1 人可启动</li>
+      <li data-k="竞争情况">海外 launch agency 存在但报价高（$500+），面向 solo dev 的低价打包服务有空档；冷启动需先做 1–2 个免费成功案例背书</li>
+      <li data-k="来源链接"><a href="https://www.reddit.com/r/SideProject/comments/1xqeu7r/how_did_you_get_your_first_100_users_for_your_app/" target="_blank" rel="noopener">reddit.com 前 100 个用户求助帖（日榜 RSS）</a><br><a href="https://www.reddit.com/r/SideProject/comments/1xpyyjd/my_sideproject_made_usd_1500_in_sales/" target="_blank" rel="noopener">reddit.com 副业项目 $1,500+ 实录（日榜 RSS）</a><br><a href="https://www.producthunt.com/leaderboard/daily/2026/11/7" target="_blank" rel="noopener">producthunt.com 11-07 日榜（头部 510/226/182 票）</a></li>
+    </ul>
+  </div>
+
+  <div class="dedup">
+    <b>去重说明：</b>「AI 编程智能体中文教程」「AI 短剧/漫剧」「Agent 基建小工具」三类机会已连续多日推荐（最近三日重复在榜），按自动去重规则今日不再占用主位。热度仍在延续的证据（2026-11-08 抓取）：知乎热榜「DeepSeek Harness 日活 150 万」「横店短剧演员无戏可拍、AI 短剧越来越火」双话题在榜；YouTube AI 短剧频道单条 343 万播放（4 周）、Claude Code 中文教程 40 万播放（9 个月）——已入场者可继续深耕，新入场者注意拥挤度。
+  </div>
+
   <h2 class="section">Top 3 推荐及理由</h2>
   <ol class="top3">
-    <li><b>短剧新规窗口（机会 1）</b>：今日唯一「政策＋内容＋平台」三重共振——知乎双榜 445 万＋169 万热度、B 站 39 万播放、小红书 AI 人物内容起量；政策落地期＝真人短剧供给缺口＋AI 短剧合规化的双重信息差窗口；模板/代做/承制三层变现可叠加，1–2 人、＜3,000 元、7–14 天首单。</li>
-    <li><b>AEO/GEO 监测与优化（机会 2）</b>：全球性长期趋势（HN 1021 分＋758 分持续发酵）＋付费方向已被 PH 第 3 名（650 票）验证；中文市场工具与服务空窗，B2B 付费明确；一次审计服务当天即可开始获客，工具化可后续叠加。</li>
-    <li><b>AI 用量成本路由微工具（机会 3）</b>：PH 榜眼 1,400 票强验证＋HN/Reddit 三源共振；开发者自付费意愿强、MVP 2–3 周；但赛道迭代极快，适合有全栈能力、能快做快收的执行者。若追求零技术当天启动，机会 4（冬季暴雪带货）是最低门槛备选。</li>
+    <li><b>扣子停服迁移服务（机会 1）</b>：今日唯一「政策级事件＋强制需求＋明确截止日期」三重确定性的机会——存量客户 2027 年底前必须迁移，不是可选项；1–2 人、＜2,000 元、1–2 周首单全部达标；窗口从 2026-11-30 停止新客开始收紧，越早卡位越能吃到首批迁移潮。</li>
+    <li><b>AI 代码仓库安全体检（机会 2）</b>：HN 106 分＋PH 181 票双平台同日共振，事件热度期内容天然有传播性；开源工具链零成本，服务化打包即可开卖；安全类需求付费意愿强、复购与转介绍属性好，适合技术背景单人当天启动。</li>
+    <li><b>教师 AI 备课减负（机会 3）</b>：政策推动＋真实痛点（「越用越累」）＋巨大信息差（禁令误读）三者齐备；内容＋数字产品＋培训三层变现可叠加；无技术门槛，最适合零代码背景的 1 人启动；建议先切单一学科做模板深度。</li>
   </ol>
+
   <div class="risk">风险提示：本报告仅为公开信息挖掘整理，不构成任何投资建议，请你自行核验真实性、风险以及合规性。</div>
-  <footer class="foot">商机侦察日报 · 每日自动扫描 9 大平台 · 2026-11-07</footer>
+  <footer class="foot">商机侦察日报 · 每日自动扫描 9 大平台 · 2026-11-08</footer>
 </div>
 </body>
 </html>
