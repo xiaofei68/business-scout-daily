@@ -3,218 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商机侦察日报 · 2026-11-22</title>
+<title>商机侦察日报 · 2026-11-23</title>
 <style>
   :root {
-    --bg: #f6f7f9;
-    --card: #ffffff;
-    --ink: #1a2233;
-    --muted: #5b6474;
-    --line: #e5e8ee;
-    --accent: #c94f2c;
-    --accent-soft: #fdf0ea;
-    --ok: #1d7a4d;
-    --warn: #b07a1a;
-    --bad: #b03a3a;
+    --bg: #f7f7f5; --card: #ffffff; --ink: #1f2328; --sub: #57606a;
+    --line: #e8e6e1; --accent: #c96442; --accent-soft: #faf1ec;
+    --good: #1a7f4b; --warn: #b35900; --bad: #b3261e;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
-    background: var(--bg); color: var(--ink); line-height: 1.75; padding: 32px 16px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.7; padding: 32px 16px 64px;
   }
   .wrap { max-width: 860px; margin: 0 auto; }
-  header.hero {
-    background: linear-gradient(135deg, #232b3d 0%, #3c4a66 100%);
-    color: #fff; border-radius: 16px; padding: 36px 32px; margin-bottom: 28px;
-  }
-  header.hero .kicker { font-size: 13px; letter-spacing: .35em; opacity: .75; text-transform: uppercase; }
-  header.hero h1 { font-size: 30px; margin: 10px 0 6px; font-weight: 700; }
-  header.hero .meta { font-size: 14px; opacity: .85; }
-  .note {
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 20px; margin-bottom: 24px; }
+  .kicker { color: var(--accent); font-weight: 700; letter-spacing: .18em; font-size: .8rem; text-transform: uppercase; }
+  h1 { font-size: 1.9rem; margin: 6px 0 10px; letter-spacing: .01em; }
+  .meta { color: var(--sub); font-size: .92rem; }
+  .meta b { color: var(--ink); }
+  .notice {
     background: var(--accent-soft); border-left: 4px solid var(--accent);
-    border-radius: 8px; padding: 12px 16px; font-size: 13.5px; margin-bottom: 24px; color: #6b4a3f;
+    padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: .9rem; color: var(--sub); margin-bottom: 28px;
   }
+  .notice code { background: #fff; padding: 1px 6px; border-radius: 4px; font-size: .85em; border: 1px solid var(--line); }
+  h2 { font-size: 1.25rem; margin: 36px 0 16px; padding-left: 12px; border-left: 4px solid var(--accent); }
   .card {
-    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
-    padding: 26px 28px; margin-bottom: 22px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px 24px; margin-bottom: 18px; box-shadow: 0 1px 2px rgba(31,35,40,.04);
   }
-  .card h2 { font-size: 19px; margin-bottom: 14px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .rank {
-    display: inline-flex; align-items: center; justify-content: center;
-    min-width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: #fff;
-    font-size: 15px; font-weight: 700; transform: translateY(4px);
+  .rank { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+  .rank .num {
+    font-size: 1.6rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; min-width: 34px;
   }
-  .rank.r1 { background: #d4452a; } .rank.r2 { background: #d9722c; } .rank.r3 { background: #c99a2e; }
-  .field { margin-bottom: 12px; font-size: 14.5px; }
-  .field b { color: var(--muted); font-weight: 600; margin-right: 6px; }
-  .links { margin-top: 6px; }
-  .links a {
-    display: block; color: #2456c4; text-decoration: none; font-size: 13px;
-    padding: 3px 0 3px 18px; position: relative; word-break: break-all;
+  .rank .name { font-size: 1.08rem; font-weight: 700; }
+  dl { display: grid; grid-template-columns: 96px 1fr; gap: 8px 14px; font-size: .93rem; }
+  dt { color: var(--sub); font-weight: 600; white-space: nowrap; }
+  dd ul { padding-left: 18px; }
+  dd li { margin-bottom: 4px; }
+  a { color: var(--accent); text-decoration: none; word-break: break-all; }
+  a:hover { text-decoration: underline; }
+  .tag { display: inline-block; font-size: .74rem; border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; color: var(--sub); margin-left: 8px; vertical-align: middle; font-weight: 400; }
+  .top3 li { margin-bottom: 14px; }
+  .top3 b { color: var(--accent); }
+  .risk {
+    margin-top: 36px; background: #26292e; color: #d8d4cc; border-radius: 12px;
+    padding: 18px 22px; font-size: .92rem;
   }
-  .links a::before { content: "↗"; position: absolute; left: 0; opacity: .55; }
-  .links a:hover { text-decoration: underline; }
-  h2.sec { font-size: 22px; margin: 34px 0 16px; }
-  .top3 .card { border-left: 4px solid var(--accent); }
-  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
-  th, td { padding: 9px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
-  th { color: var(--muted); font-weight: 600; background: #fafbfd; }
-  .pill { display: inline-block; padding: 1px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
-  .pill.ok { background: #e5f3ec; color: var(--ok); }
-  .pill.warn { background: #f7eeda; color: var(--warn); }
-  .pill.bad { background: #f7e3e3; color: var(--bad); }
-  .risk { color: var(--muted); font-size: 13.5px; border-top: 1px dashed var(--line); margin-top: 28px; padding-top: 16px; }
-  footer.copy { text-align: center; color: #9aa3b2; font-size: 12.5px; margin-top: 36px; }
+  .risk strong { color: #fff; }
+  table.status { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; background: var(--card); border-radius: 10px; overflow: hidden; }
+  table.status th, table.status td { padding: 9px 14px; border-bottom: 1px solid var(--line); text-align: left; }
+  table.status th { background: #f0efeb; font-weight: 700; }
+  .ok { color: var(--good); font-weight: 700; }
+  .mid { color: var(--warn); font-weight: 700; }
+  .no { color: var(--bad); font-weight: 700; }
+  footer { margin-top: 40px; color: var(--sub); font-size: .8rem; text-align: center; }
+  @media (max-width: 620px) {
+    dl { grid-template-columns: 1fr; }
+    dt { margin-top: 6px; }
+    h1 { font-size: 1.5rem; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header class="hero">
+<header>
   <div class="kicker">Business Scout Daily</div>
-  <h1>商机侦察日报 · 2026-11-22</h1>
-  <div class="meta">数据观察日期：2026-11-22（北京时间上午）｜覆盖：小红书 · 抖音 · 知乎 · B站 · Reddit · X · Product Hunt · Hacker News · YouTube</div>
+  <h1>商机侦察日报 · 2026-11-23</h1>
+  <div class="meta">观察日期：<b>2026-11-23</b>（北京时间）· 数据来源：各平台公开页面/接口实时抓取 · 未标注「估算」的互动数据均为本次真实抓取</div>
 </header>
 
-<div class="note">
-  本期要点：黎曼猜想 Lean 形式化验证刷屏（知乎+B站+HN 三平台爆点）；AI 动画二创进入平台官方推流期（B站「AI全民制作人」单条 327 万播放）；Inkling 2 Mini 掀起本地小模型部署热（YouTube 单条 8 小时 7.4 万播放）；China Travel 入境游内容持续走量；Product Hunt 今日约 1/3 新品围绕 AI Agent/MCP。Reddit 本期遭风控拦截（详见采集状态表）。
+<div class="notice">
+  平台采集状态：知乎 ✅ / B站 ✅ / Hacker News ✅ / Product Hunt ✅ / YouTube ✅（搜索验证）/ 抖音 ✅（推荐流）/ 小红书 ⚠️（发现页可用，搜索被登录墙拦截）/ Reddit ❌（网络风控拦截，本次未采集）/ X ❌（需登录态，浏览器无登录，本次未采集）。
 </div>
 
-<!-- ============ 机会 1 ============ -->
+<h2>机会清单（按优先级从高到低）</h2>
+
 <div class="card">
-  <h2><span class="rank r1">1</span>AI 动画短视频「批量生产工作流」：教程 + 模板 + 商单</h2>
-  <div class="field"><b>需求信号</b>B站热门榜「当我用AI续写爱情公寓4【AI全民制作人】」327.5万播放 / 34.0万赞，同系列多条上榜，且 B站官方「AI公开创造赛」正在推流（2026-11-22 实抓）；抖音热点榜「豆包眼中的我具象化了」热度 796.7万（2026-11-22 08:02 快照，实抓）；YouTube「How to Make Viral Stickman Animated Shorts Using FREE AI TOOLS」47万播放/12天、「I Made VIRAL 3D Animation Videos Using ONLY Claude AI (FREE Plugin)」20万播放/6天（实抓）。三平台同向验证：AI 动画从玩法演示进入「人人想做但不会做」阶段。</div>
-  <div class="field"><b>目标人群</b>短视频创作者、MCN 内容运营、想借 AI 工具入场内容赛道的素人</div>
-  <div class="field"><b>变现路径</b>①系统教程/训练营 199–599 元；②AI 动画商单（品牌短片/知识付费片头）500–5000 元/条；③模板与工作流数字产品 49–199 元。收益量级：中文教程赛道尚空白，头部英文频道单月增粉数万（估算）</div>
-  <div class="field"><b>启动门槛</b>技能：会用 Claude 插件/AI 视频工具 + 基础剪辑；资金：0–2000 元（工具订阅）；时间：1–2 周出 demo，30 天内可首单</div>
-  <div class="field"><b>竞争情况</b>英文教程起量快、中文系统化教学少；B站赛事推流带来 1–2 个月流量红利窗口</div>
-  <div class="links">
-    <a href="https://www.bilibili.com/video/BV1atse6EEfx">B站：当我用AI续写爱情公寓4【AI全民制作人】（327.5万播放）</a>
-    <a href="https://www.youtube.com/watch?v=-fgNFJCQZGk">YouTube：How to Make Viral Stickman Animated Shorts Using FREE AI TOOLS（47万播放）</a>
-    <a href="https://www.youtube.com/watch?v=Gu9lO8oqGYU">YouTube：I Made VIRAL 3D Animation Videos Using ONLY Claude AI（20万播放）</a>
-    <a href="https://www.douyin.com/hot">抖音热点榜：「豆包眼中的我具象化了」热度796.7万（2026-11-22快照）</a>
-  </div>
+  <div class="rank"><span class="num">1</span><span class="name">AI短剧/AI漫剧成片制作与接单变现<span class="tag">4平台交叉验证</span></span></div>
+  <dl>
+    <dt>机会名称</dt><dd>一条龙承接AI短剧/AI漫剧制作，吃平台创作者扶持补贴与商单需求</dd>
+    <dt>需求信号</dt><dd><ul>
+      <li>知乎热榜第7位《AI短剧、AI漫剧现在这么火爆…》热度<b>143万</b>、87个回答（真实抓取）</li>
+      <li>B站《当我用AI续写爱情公寓4》播放<b>493.5万</b>；热搜《横店真人短剧还赚钱吗》热度26.8万（真实抓取）</li>
+      <li>抖音《分寝系统出错，冰山校花成了我室友》播放<b>13.8万</b>，携带 #AI创作浪潮计划 #未来导演扶持计划 官方标签（真实抓取）</li>
+      <li>YouTube《一個人20分鐘跑通AI短漫劇製作全流程…商業變現》教程 <b>13万播放</b>（真实抓取）</li>
+    </ul></dd>
+    <dt>目标人群</dt><dd>网文作者/MCN短剧团队（产能外包）、需低成本营销内容的中小企业、想入行的新手（教学客户）</dd>
+    <dt>变现路径</dt><dd>①接单定制成片按集500–3000元（估算）；②自营账号平台分成+广告月数千至数万（估算）；③教程/模板99–999元/份（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：即梦/可灵/Vidu+剪映；资金：工具订阅500–2000元/月（总投入＜5000元）；时间：单人7–30天出第一条成片</dd>
+    <dt>竞争情况</dt><dd>赛道升温但合格成片产能稀缺；即梦、抖音、B站官方扶持计划均处补贴期</dd>
+    <dt>来源链接</dt><dd>
+      <a href="https://www.zhihu.com/question/2079246734493066423" target="_blank" rel="noopener">知乎热榜讨论</a> ·
+      <a href="https://www.bilibili.com/video/BV1atse6EEfx" target="_blank" rel="noopener">B站AI续写视频</a> ·
+      <a href="https://www.douyin.com/search/AI%E7%9F%AD%E5%89%A7" target="_blank" rel="noopener">抖音AI短剧搜索</a> ·
+      <a href="https://www.youtube.com/results?search_query=AI%E7%9F%AD%E5%89%A7%E6%95%99%E7%A8%8B" target="_blank" rel="noopener">YouTube教程生态</a>
+    </dd>
+  </dl>
 </div>
 
-<!-- ============ 机会 2 ============ -->
 <div class="card">
-  <h2><span class="rank r2">2</span>「AI + Lean 形式化验证」科普与入门教学先发窗口（黎曼猜想事件驱动）</h2>
-  <div class="field"><b>需求信号</b>知乎热榜前 17 名中 4 条相关：#1「三维NS方程有限时间爆破形式化证明」275万热度、#2「Lean与Mathlib社区联合确认 Alpöge 对黎曼猜想的证明正确」233万热度、#8 133万、#17 95万（2026-11-22 实抓）；B站「大结局来了！AI 的黎曼猜想证明通过 Lean 形式化验证！」54.9万播放/324弹幕、「陶哲轩谈AI证明黎曼猜想」34.3万播放，10万+ 视频十余条（实抓）；HN「Lean verification of the Riemann Hypothesis」779分/616评论、「Hurried Announcement: Masullo GRH」2380分/1151评论（2026-11-21/22 实抓）。顶级数学事件 + 全球验证，注意力窗口罕见。</div>
-  <div class="field"><b>目标人群</b>数学/计算机专业学生、考研考博人群、AI 冲击焦虑的科研与教学人群、技术爱好者</div>
-  <div class="field"><b>变现路径</b>①Lean 入门系列课/专栏 99–399 元（国内几乎空白）；②科普账号流量分成 + 数学/AI 图书带货；③形式化验证远程接单（海外时薪高，人才缺口大）。收益量级：科普单条 10万+ 播放已验证，课程转化待验证（估算）</div>
-  <div class="field"><b>启动门槛</b>技能：Lean 基础（可 2–4 周速成）+ 内容表达；资金：≈0；时间：科普内容 3–7 天可发，系统课 30 天</div>
-  <div class="field"><b>竞争情况</b>B站搜索「黎曼猜想 Lean」前 20 条以新闻解读为主，系统化中文 Lean 教学稀缺；海外有 Mathlib 官方文档但无中文版</div>
-  <div class="links">
-    <a href="https://www.zhihu.com/question/2107620110105932525">知乎：Lean与Mathlib社区联合声明确认Alpöge对黎曼猜想的证明正确（233万热度）</a>
-    <a href="https://www.bilibili.com/video/BV1RgybzPEQQ">B站：大结局来了！AI 的黎曼猜想证明通过 Lean 形式化验证！（54.9万播放）</a>
-    <a href="https://news.ycombinator.com/item?id=50589618">HN：Lean verification of the Riemann Hypothesis（779分/616评）</a>
-    <a href="https://news.ycombinator.com/item?id=50579568">HN：Hurried Announcement: Masullo GRH（2380分/1151评）</a>
-  </div>
+  <div class="rank"><span class="num">2</span><span class="name">GTA6发售窗口期二创/攻略/整活流量红利<span class="tag">5源验证 · 窗口4–6周</span></span></div>
+  <dl>
+    <dt>机会名称</dt><dd>在GTA6发售后的黄金窗口做细分题材二创，吃创作激励与带货佣金</dd>
+    <dt>需求信号</dt><dd><ul>
+      <li>游戏2026-11-19发售；B站《侠盗猎车手6 第一集》播放<b>464万</b>；B站同时3条GTA热搜（28.0万/25.1万/29.1万热度）（真实抓取）</li>
+      <li>知乎热榜《如何评价GTA 6的结局？》热度<b>101万</b>、64回答（真实抓取）</li>
+      <li>Hacker News《The Birds of GTA 6》300分/123评论——细分考据角度也能爆（真实抓取）</li>
+      <li>二手来源（Forbes/CBS摘要，估算）：YouTube上GTA6相关视频发售前已破<b>400亿</b>次观看</li>
+    </ul></dd>
+    <dt>目标人群</dt><dd>GTA6玩家（攻略/彩蛋）、泛游戏娱乐观众、主机/外设潜在买家</dd>
+    <dt>变现路径</dt><dd>①创作激励+广告分成（单条数十万播放约数千元，估算）；②外设/加速器/周边带货佣金50–300元/单（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：录屏剪辑即可；资金：0–5000元；时间：即拍即发，1周内可起量</dd>
+    <dt>竞争情况</dt><dd>竞争极高但流量池空前；胜负手在细分角度（考据/冷知识/整活），纯实况跟风已红海</dd>
+    <dt>来源链接</dt><dd>
+      <a href="https://www.bilibili.com/video/BV1JpyazXEUD" target="_blank" rel="noopener">B站GTA6视频</a> ·
+      <a href="https://www.zhihu.com/question/2107491544735470766" target="_blank" rel="noopener">知乎结局讨论</a> ·
+      <a href="https://news.ycombinator.com/item?id=50602843" target="_blank" rel="noopener">HN观鸟指南</a>
+    </dd>
+  </dl>
 </div>
 
-<!-- ============ 机会 3 ============ -->
 <div class="card">
-  <h2><span class="rank r3">3</span>小模型本地部署「开箱即用」中文教程与一键包（Inkling 2 Mini 等）</h2>
-  <div class="field"><b>需求信号</b>HN「Inkling 2 Mini」官方发布 1365分/278评论，「Inkling-2-Mini in 5.4 GB Memory」323分/87评论（实抓）；YouTube「Inkling 2 Mini Is INSANE – Is THIS the BEST Local AI Model?」7.4万播放/仅8小时、「Inkling 2 Mini Locally」7387播放/1天（实抓）；B站 11-21/22 两天内出现 ≥6 条 Inkling 2 Mini 相关视频（播放 85–1.7万，起量初期，实抓）。海外已爆、中文空白，标准先发窗口形态。</div>
-  <div class="field"><b>目标人群</b>想在笔记本本地跑 AI 的开发者与爱好者、隐私敏感用户、网络受限环境用户</div>
-  <div class="field"><b>变现路径</b>①中文部署教程免费引流 + 付费社群/答疑 39–199 元；②一键部署整合包/脚本体面收费 ≤99 元；③本地 AI 装机与调优咨询。收益量级：窗口期 2–4 周内起号，收益依赖执行（估算）</div>
-  <div class="field"><b>启动门槛</b>技能：Python/环境配置基础；资金：≈0；时间：1 周内出首篇教程</div>
-  <div class="field"><b>竞争情况</b>中文区相关视频播放均 &lt;2万，尚无头部；英文区已现 7万+ 播放爆款，内容可本地化复刻</div>
-  <div class="links">
-    <a href="https://news.ycombinator.com/item?id=50581260">HN：Inkling 2 Mini 官方发布（1365分/278评）</a>
-    <a href="https://news.ycombinator.com/item?id=50591853">HN：Inkling-2-Mini in 5.4 GB Memory（323分/87评）</a>
-    <a href="https://www.youtube.com/watch?v=OdMpNiByntM">YouTube：Inkling 2 Mini Is INSANE（7.4万播放/8小时）</a>
-    <a href="https://www.bilibili.com/video/BV1m4yhzcEzr">B站：Thinking Machines 发布 Inkling 2 Mini：约20GB可在笔记本运行</a>
-  </div>
+  <div class="rank"><span class="num">3</span><span class="name">Vibe-coded休闲小游戏/互动网页玩具<span class="tag">海外+国内双验证</span></span></div>
+  <dl>
+    <dt>机会名称</dt><dd>用AI编程1–2周做爆点网页小游戏，流量广告+品牌定制双路径</dd>
+    <dt>需求信号</dt><dd><ul>
+      <li>Hacker News《Sandwich Simulator》<b>564分/198评论</b>，独立小游戏直冲HN前三（真实抓取）</li>
+      <li>Hacker News《a game where you are an LLM's subagent》261分/59评论（真实抓取）</li>
+      <li>Product Hunt今日第2名 Yoroll「Build playable stories without a game engine」<b>243票</b>（真实抓取）</li>
+      <li>B站《在B站就能玩到的像素射击游戏【B站AI创造公开赛】》播放<b>72.8万</b>（真实抓取）</li>
+    </ul></dd>
+    <dt>目标人群</dt><dd>泛娱乐网页用户、独立开发者社区、需互动营销页的品牌方</dd>
+    <dt>变现路径</dt><dd>①流量广告/打赏（估算）；②品牌定制互动页3000–20000元/单（估算）；③小游戏平台分成</dd>
+    <dt>启动门槛</dt><dd>技能：AI编程+基础前端；资金：API费＜500元；时间：创意到位1–2周上线</dd>
+    <dt>竞争情况</dt><dd>单品生命周期短、模仿快，但"追热点×小玩具"打法可重复，HN/PH/B站公开赛是免费爆发渠道</dd>
+    <dt>来源链接</dt><dd>
+      <a href="https://news.ycombinator.com/item?id=50594911" target="_blank" rel="noopener">HN Sandwich Simulator</a> ·
+      <a href="https://news.ycombinator.com/item?id=50599762" target="_blank" rel="noopener">HN LLM subagent游戏</a> ·
+      <a href="https://www.producthunt.com/products/yoroll" target="_blank" rel="noopener">Product Hunt Yoroll</a> ·
+      <a href="https://www.bilibili.com/video/BV1vBypzDECn" target="_blank" rel="noopener">B站AI像素射击</a>
+    </dd>
+  </dl>
 </div>
 
-<!-- ============ 机会 4 ============ -->
 <div class="card">
-  <h2><span class="rank">4</span>外国人入境游 China Travel：行程定制 + 地陪陪译服务</h2>
-  <div class="field"><b>需求信号</b>小红书「新版外国人“上海落地签”」1.3万赞（2026-11-22 发现页实抓）；抖音热点榜「特朗普公开点赞深圳干净整洁」热度 835.4万（实抓），China 叙事带动来华好奇；YouTube「5 Days in Shanghai, China 2026 - A Travel Guide for First-Time Visitors」37万播放/4个月、「2026年中国15个最佳旅游目的地」29万播放（实抓）。签证便利化政策持续加码，供给端个性化服务远未饱和。</div>
-  <div class="field"><b>目标人群</b>首次来华的英语世界游客（免签/落地签红利期）、商务+旅游混合行程的外籍人士</div>
-  <div class="field"><b>变现路径</b>①英文行程定制 $30–100/单；②地陪/陪译 ¥500–1500/天；③小红书英文攻略账号沉淀私域接单。收益量级：单人月 5–20 单可达成（估算，随季节波动）</div>
-  <div class="field"><b>启动门槛</b>技能：英语沟通 + 本地信息差；资金：&lt;1000 元；时间：2 周内可上线接单</div>
-  <div class="field"><b>竞争情况</b>OTA 大平台覆盖标准化产品，个性化长尾（小众城市、深度主题）留给独立服务者；独立向导在小红书/YouTube 处于起量期</div>
-  <div class="links">
-    <a href="https://www.xiaohongshu.com/explore/6ad74cb6000000001d02d03f?xsec_token=AB567WJhVz7tTlCIMnw0IlQ6zm5sYEzPVeAqSOfiLnl1E=&xsec_source=">小红书：新版外国人“上海落地签”（1.3万赞）</a>
-    <a href="https://www.youtube.com/watch?v=CE1HFeOwMDY">YouTube：5 Days in Shanghai, China 2026（37万播放）</a>
-    <a href="https://www.youtube.com/watch?v=zERNfpomYr4">YouTube：2026年中国15个最佳旅游目的地（29万播放）</a>
-    <a href="https://www.douyin.com/hot">抖音热点榜：特朗普公开点赞深圳干净整洁（835.4万热度）</a>
-  </div>
+  <div class="rank"><span class="num">4</span><span class="name">面向出海开发者的Reddit监听获客工具/代运营<span class="tag">PH今日榜首验证</span></span></div>
+  <dl>
+    <dt>机会名称</dt><dd>做「Reddit找客户」的监听SaaS或人工代运营，服务出海独立开发者</dd>
+    <dt>需求信号</dt><dd><ul>
+      <li>Product Hunt今日第1名 Rankhog「Get customers from Reddit on autopilot」<b>256票/31评论</b>（真实抓取）</li>
+      <li>Indie Hackers热帖《Reddit haters are wrong — it can work for customer acquisition》（二手来源）</li>
+      <li>二手案例（估算）："How I Built a Reddit Marketing Tool to $30K MRR in 4 Months"</li>
+    </ul></dd>
+    <dt>目标人群</dt><dd>出海独立开发者、跨境SaaS小团队、无暇社区运营的B2B创业者</dd>
+    <dt>变现路径</dt><dd>①SaaS订阅$19–99/月（估算）；②人工代运营月费3000–10000元（估算），跑通再产品化</dd>
+    <dt>启动门槛</dt><dd>技能：Reddit API+LLM语义筛选+全栈；资金：500–2000元/月；时间：30天MVP</dd>
+    <dt>竞争情况</dt><dd>海外已有GummySearch等玩家且新入局者众；差异化在垂直细分与中文交付</dd>
+    <dt>来源链接</dt><dd>
+      <a href="https://www.producthunt.com/products/rankhog" target="_blank" rel="noopener">Product Hunt Rankhog</a> ·
+      <a href="https://www.indiehackers.com/post/reddit-haters-are-wrong-it-can-work-for-customer-acquisition-19d76b01bc" target="_blank" rel="noopener">Indie Hackers讨论</a>
+    </dd>
+  </dl>
 </div>
 
-<!-- ============ 机会 5 ============ -->
 <div class="card">
-  <h2><span class="rank">5</span>AI Agent / MCP 周边小工具（面向海外独立开发者生态）</h2>
-  <div class="field"><b>需求信号</b>Product Hunt 今日 50 条新品中约 1/3 围绕 AI Agent/MCP：gitroots（面向开发者与 Agent 的 GitHub 路径级访问）、Shipyard（Claude/Cursor/Codex 自动化集成 MCP）、AI Context Flow MCP（跨 Agent 记忆同步）、Publicit（面向 Agent 的广告基建）、WaitFeed（Agent 等待时间的信息流）（2026-11-22 实抓）；HN 同期出现「Pandex – Official European Law for AI Agents, over MCP」等 Agent 基建讨论（实抓）。两个独立信源同向：Agent 工具链是当前海外独立开发最强主线。</div>
-  <div class="field"><b>目标人群</b>Claude/Cursor/Codex 等重度 AI 用户、独立开发者、海外 prosumer 市场</div>
-  <div class="field"><b>变现路径</b>免费 MCP 工具引流 → Pro 订阅 $5–20/月或一次性买断 $29–49。收益量级：PH 上榜产品周新增数百至数千用户（估算，分化大）</div>
-  <div class="field"><b>启动门槛</b>技能：能写 MCP server / 浏览器插件；资金：≈0；时间：1–2 周 MVP</div>
-  <div class="field"><b>竞争情况</b>赛道拥挤但生态极早期，长尾场景（垂直行业、中文场景出海）仍大量空缺；分发靠 PH/HN/X 冷启动</div>
-  <div class="links">
-    <a href="https://www.producthunt.com/products/gitroots">Product Hunt：gitroots</a>
-    <a href="https://www.producthunt.com/products/shipyard">Product Hunt：Shipyard（MCP 自动化集成）</a>
-    <a href="https://www.producthunt.com/products/ai-context-flow">Product Hunt：AI Context Flow MCP</a>
-    <a href="https://news.ycombinator.com/item?id=50593481">HN：Pandex – Official European Law for AI Agents, over MCP</a>
-  </div>
+  <div class="rank"><span class="num">5</span><span class="name">AI建站「最后一公里」：建站+可视化维护服务<span class="tag">痛点已上PH榜单</span></span></div>
+  <dl>
+    <dt>机会名称</dt><dd>为用Claude/Cursor生成网站却不会改的小商家，提供建站+维护订阅</dd>
+    <dt>需求信号</dt><dd><ul>
+      <li>Product Hunt今日第9名 Ulika「Visual editor for sites built with Claude, Cursor, or Codex」89票（真实抓取）——「AI建完不会改」痛点被产品化验证</li>
+      <li>Product Hunt官方类目导航已把「Vibe Coding Tools」列为顶级类目（真实抓取）</li>
+      <li>Hacker News《Localcode》本地AI编码新帖持续发热（真实抓取）</li>
+    </ul></dd>
+    <dt>目标人群</dt><dd>被「能看不能改」困住的站长、预算有限的小商家、自由职业者</dd>
+    <dt>变现路径</dt><dd>建站套餐1500–8000元/单 + 月度维护200–500元/月（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：前端基础+vibe coding工具链；资金：0–1000元；时间：2周跑通第一单</dd>
+    <dt>竞争情况</dt><dd>工具层竞争激烈；「工具+人工交付」本地化服务在中文市场仍空档</dd>
+    <dt>来源链接</dt><dd>
+      <a href="https://www.producthunt.com/products/ulika" target="_blank" rel="noopener">Product Hunt Ulika</a> ·
+      <a href="https://news.ycombinator.com/item?id=50604540" target="_blank" rel="noopener">HN Localcode</a>
+    </dd>
+  </dl>
 </div>
 
-<!-- ============ 机会 6 ============ -->
+<h2>Top 3 推荐及理由</h2>
 <div class="card">
-  <h2><span class="rank">6</span>GTA6 全收集互动地图 / 攻略工具站（首发期时效窗口）</h2>
-  <div class="field"><b>需求信号</b>GTA6 首发流量巨大：B站通关流程视频 738.9万播放 / 5.4万弹幕（实抓）；「《GTA6》全收集互动地图现已上线」数小时内 1.9万播放/12评，说明工具型需求外溢（实抓）；知乎热榜 #23「《Gta6》M站用户开分仅3.7分…两极分化」58万热度（实抓）。攻略视频已红海，但中文互动地图/数据工具仍空缺。</div>
-  <div class="field"><b>目标人群</b>GTA6 玩家（首发期全球数千万量级，估算）</div>
-  <div class="field"><b>变现路径</b>工具站广告（AdSense/联盟）+ 进阶功能订阅；攻略内容平台分成。收益量级：首发 1–3 个月搜索流量峰值显著，随后衰减（估算）</div>
-  <div class="field"><b>启动门槛</b>技能：前端 + 数据整理；资金：&lt;500 元（域名/托管）；时间：7–14 天上线</div>
-  <div class="field"><b>竞争情况</b>视频攻略竞争烈（头部 700万+ 播放），工具站方向竞争低；强时效性，窗口约 1–3 个月</div>
-  <div class="links">
-    <a href="https://www.bilibili.com/video/BV1K5sh6hE1R">B站：《GTA6》全收集互动地图现已上线（1.9万播放）</a>
-    <a href="https://www.bilibili.com/video/BV1NDsS6UE8D">B站：GTA6 4K最高画质全任务全剧情流程（738.9万播放）</a>
-    <a href="https://www.zhihu.com/question/2107390437933707560">知乎：《Gta6》M站用户开分仅3.7分，两极分化（58万热度）</a>
-  </div>
-</div>
-
-<!-- ============ Top 3 ============ -->
-<h2 class="sec">Top 3 推荐</h2>
-<div class="top3">
-  <div class="card">
-    <h2><span class="rank r1">🥇</span>AI 动画短视频工作流（机会 1）</h2>
-    <div class="field">唯一在 4 个平台（B站/抖音/YouTube + 官方赛事推流）同向验证的需求；变现路径三层叠加（课/单/模板）且 30 天内可闭环；1 人即可启动，成本近零；中文系统化教学空白 = 先发优势。</div>
-  </div>
-  <div class="card">
-    <h2><span class="rank r2">🥈</span>Lean 形式化验证科普与教学（机会 2）</h2>
-    <div class="field">百年级数学事件 + 三平台爆炸热度（知乎 4 条热榜/B站 54.9万播放/HN 2380分），注意力窗口极稀缺；国内 Lean 教学近乎空白，稀缺技能溢价高；适合有数理背景的 1 人冷启动，零成本。</div>
-  </div>
-  <div class="card">
-    <h2><span class="rank r3">🥉</span>小模型本地部署教程/一键包（机会 3）</h2>
-    <div class="field">海外 YouTube 8 小时 7.4万 播放 vs 中文区播放 &lt;2万，典型信息差窗口；技术门槛低、1 周可出内容；有明确时间窗（2–4 周），执行力要求高但启动成本为零。</div>
-  </div>
-</div>
-
-<!-- ============ 采集状态 ============ -->
-<h2 class="sec">平台采集状态</h2>
-<div class="card">
-  <table>
-    <tr><th>平台</th><th>状态</th><th>说明</th></tr>
-    <tr><td>小红书</td><td><span class="pill ok">成功</span></td><td>发现页热门笔记（未登录态）；关键词搜索需登录，未执行</td></tr>
-    <tr><td>抖音</td><td><span class="pill ok">成功</span></td><td>热点榜 API 完整 40 条（2026-11-22 08:02 快照）</td></tr>
-    <tr><td>知乎</td><td><span class="pill ok">成功</span></td><td>热榜 API 前 30 条</td></tr>
-    <tr><td>B站</td><td><span class="pill ok">成功</span></td><td>热门榜 API 30 条 + 站内搜索交叉验证</td></tr>
-    <tr><td>Hacker News</td><td><span class="pill ok">成功</span></td><td>官方 API 首页 30 条</td></tr>
-    <tr><td>Product Hunt</td><td><span class="pill ok">成功</span></td><td>官方 Feed 50 条新品</td></tr>
-    <tr><td>YouTube</td><td><span class="pill ok">成功</span></td><td>浏览器登录态搜索验证（trending 页已改版，改用搜索交叉验证）</td></tr>
-    <tr><td>X</td><td><span class="pill warn">部分</span></td><td>公开趋势源（trends24）采集成功；站内需登录，科技圈讨论未采集</td></tr>
-    <tr><td>Reddit</td><td><span class="pill bad">失败</span></td><td>JSON/RSS/浏览器/镜像站/存档 API 多路线均被风控拦截，本期未采集；候选机会均已在 ≥2 个其他平台交叉验证</td></tr>
-  </table>
+  <ol class="top3">
+    <li><b>AI短剧/AI漫剧制作（机会1）</b>——唯一在4个平台（知乎、B站、抖音、YouTube）完成交叉验证；平台补贴期叠加商单外溢，1人、＜5000元、30天内可变现全部满足；「教学+接单+自营」三条腿并行抗风险。</li>
+    <li><b>GTA6内容窗口红利（机会2）</b>——5个信息源验证、近乎零成本、起量最快；但窗口仅4–6周且竞争极高，适合做短线现金流，与机会1的长期技能形成组合。</li>
+    <li><b>Vibe-coded小游戏（机会3）</b>——海外（HN/PH）与国内（B站）双通道验证，成本最低（＜500元）；单品看创意，但打法可重复、可沉淀个人IP，是程序员转型的低风险试验田。</li>
+  </ol>
 </div>
 
 <div class="risk">
-  <b>风险提示：</b>本报告仅为公开信息挖掘整理，不构成任何投资建议，请你自行核验真实性、风险以及合规性。<br>
-  数据说明：标注「实抓」的互动数据为 2026-11-22 抓取的真实读数；标注「估算」的为推断值；播放/热度为抓取时点快照，会随时间变化。已按自动去重规则剔除短剧切片、无货源电商等全网泛滥老项目。
+  <strong>风险提示</strong><br>
+  本报告仅为公开信息挖掘整理，不构成任何投资建议，请你自行核验真实性、风险以及合规性。
 </div>
 
-<footer class="copy">商机雷达 · 商机侦察日报 · 自动生成于 2026-11-22</footer>
+<h2>附：本次执行日志</h2>
+<table class="status">
+  <tr><th>平台</th><th>采集状态</th><th>说明</th></tr>
+  <tr><td>知乎</td><td class="ok">✅ 成功</td><td>移动端热榜API，抓取30条（含热度与回答数）</td></tr>
+  <tr><td>B站</td><td class="ok">✅ 成功</td><td>热搜API + 排行榜API</td></tr>
+  <tr><td>Hacker News</td><td class="ok">✅ 成功</td><td>Algolia API，首页30条</td></tr>
+  <tr><td>Product Hunt</td><td class="ok">✅ 成功</td><td>浏览器桥接抓取今日榜单+产品链接</td></tr>
+  <tr><td>YouTube</td><td class="ok">✅ 成功</td><td>浏览器桥接搜索验证（trending页已下线）</td></tr>
+  <tr><td>抖音</td><td class="ok">✅ 成功</td><td>浏览器桥接推荐流；热搜API返回空</td></tr>
+  <tr><td>小红书</td><td class="mid">⚠️ 部分成功</td><td>发现页DOM抓取约20条笔记；搜索被登录墙拦截</td></tr>
+  <tr><td>Reddit</td><td class="no">❌ 访问失败</td><td>网络风控拦截（curl与浏览器均被拦），本次暂未采集该平台数据</td></tr>
+  <tr><td>X</td><td class="no">❌ 访问失败</td><td>需登录态且浏览器无X登录，本次暂未采集该平台数据</td></tr>
+</table>
+
+<footer>商机雷达 · 自动生成于 2026-11-23 · Business Scout Daily</footer>
 </div>
 </body>
 </html>
