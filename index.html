@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商机侦察日报 · 2026-11-26</title>
+<title>商机侦察日报 · 2026-11-27</title>
 <style>
   :root {
     --bg: #f7f7f5; --card: #ffffff; --ink: #1f2328; --sub: #57606a;
@@ -55,6 +55,8 @@
   .ok { color: var(--good); font-weight: 700; }
   .mid { color: var(--warn); font-weight: 700; }
   .no { color: var(--bad); font-weight: 700; }
+  .carry { font-size: .92rem; color: var(--sub); background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 16px 20px; margin-bottom: 18px; }
+  .carry b { color: var(--ink); }
   footer { margin-top: 40px; color: var(--sub); font-size: .8rem; text-align: center; }
   @media (max-width: 620px) {
     dl { grid-template-columns: 1fr; }
@@ -68,155 +70,198 @@
 
 <header>
   <div class="kicker">Business Scout Daily</div>
-  <h1>商机侦察日报 · 2026-11-26</h1>
-  <div class="meta">观察日期：<b>2026-11-26</b>（北京时间）· 数据来源：各平台公开页面/接口实时抓取 · 未标注「估算」的互动数据均为本次真实抓取</div>
+  <h1>商机侦察日报 · 2026-11-27</h1>
+  <div class="meta">观察日期：<b>2026-11-27</b>（北京时间）· 数据来源：各平台公开页面/接口实时抓取 · 未标注「估算」的互动数据均为本次真实抓取</div>
 </header>
 
 <div class="notice">
-  平台采集状态：知乎 ✅ / B站 ✅ / Hacker News ✅ / Product Hunt ✅ / YouTube ✅（登录态首页+搜索验证）/ 抖音 ✅（热榜50条）/ 小红书 ✅（发现页29条，搜索登录墙）/ Reddit ❌（curl直连/代理/浏览器/webReader四种方式均被网络风控拦截，本次未采集）/ X ❌（登录墙，浏览器无X登录态，本次未采集）。本日最大新信号：GTA 6 主机版发售约一周（据攻略/直播视频发布时间推断），攻略内容需求进入爆发窗口。
+  平台采集状态：知乎 ✅（热榜API 30条）/ B站 ✅（排行榜API 100条 + 搜索5组）/ 抖音 ✅（热搜词榜50条）/ 小红书 ✅（发现页30条，搜索登录墙）/ Hacker News ✅（首页28条）/ Product Hunt ✅（浏览器实时榜，当日PT日榜尚未生成）/ YouTube ✅（登录态首页22条 + 本周筛选搜索4组）/ Reddit ❌（RSS 404/429、JSON 403、浏览器 old/www 均 Blocked，四种方式失败，本次未采集；以搜索引擎索引补真实帖子链接）/ X ❌（登录墙，本次未采集；以搜索引擎索引补真实帖子链接）。本日最大新信号：<b>1Password 后台被入侵</b>（11-19 员工 GitHub 账号失守 → 11-25 公告），HN 1626分/702评 + YouTube 12小时内 6 条解读 + Reddit/X 多帖，而 B站搜索前排仍是 2019–2025 旧内容——中文「账号安全怎么办」实操位空缺。
 </div>
 
 <h2>机会清单（按优先级从高到低）</h2>
 
 <div class="card">
-  <div class="rank"><span class="num">1</span><span class="name">GTA 6 发售期「攻略+资讯」内容矩阵<span class="tag">B站+YouTube+知乎三平台交叉验证 · 今日新窗口</span></span></div>
+  <div class="rank"><span class="num">1</span><span class="name">1Password 事件引爆「账号安全体检」：中文解读内容 + 个人/小团队安全配置服务 + 硬件密钥带货<span class="tag">HN + YouTube + PH + Reddit/X 四源验证 · 本周新窗口</span></span></div>
   <dl>
-    <dt>机会名称</dt><dd>吃 GTA 6 发售后 30–90 天攻略检索红利：做中文攻略/资讯/图鉴类内容矩阵（B站/YouTube/抖音），叠加游戏周边与外设带货</dd>
+    <dt>机会名称</dt><dd>借 1Password 后台被入侵事件（11-25 公告）做中文安全事件解读与「账号安全体检」服务：内容引流 → 付费配置（Passkey/2FA/硬件密钥/密码迁移）→ 密钥与安全软件带货</dd>
     <dt>需求信号</dt><dd><ul>
-      <li>B站搜索（综合排序）：《【侠盗猎车手6】4K最高画质 全网首发 全任务全剧情流程通关攻略》播放<b>976.2万</b>、弹幕<b>7.2万</b>；《【4K】真结局完结 全网首发〈GTA6〉主线全流程实况解说》播放<b>289.1万</b>、弹幕<b>3.3万</b>（搜索页真实抓取，观察日2026-11-26）——发布约一周的攻略内容即近千万播放</li>
-      <li>YouTube搜索：大耳朵TV《可以玩10年的遊戲！GTA 6太真實太好玩！》<b>44万观看</b>（4天前）、RHung阿航GTA6正式開玩直播<b>71万观看</b>（7天前）、阿月《GTA6前期9個必知重點…開局賺錢攻略》<b>34万观看</b>（6天前）；登录态首页另见 MrBeast《I Survived 100 Hours In GTA 6》<b>7315万观看</b>（6天前，浏览器桥接真实抓取）</li>
-      <li>知乎热榜在榜（第15位）：《如何看待黑客放出〈GTA 6〉Xbox版核心文件后，民间靠AI不到24小时就搬上PC并成功进入实机？》<b>158回答/564关注</b>（热榜API真实抓取）——全网讨论度极高</li>
-      <li>B站搜索同屏可见大量长尾需求位：载具图鉴（6258播放）、地图BUG（9.9万播放）、刷钱BUG攻略（2.4万播放）——「细分攻略」仍大量空缺（真实抓取）</li>
-      <li>（推断项）GTA 6 主机版发售约1周：据上述通关/直播视频发布时间推断，未验证确切发售日；官方PC版未发售</li>
+      <li>Hacker News 首页第2位《1Password Security Incident》<b>1626分 / 702评论</b>（Algolia API真实抓取，观察日2026-11-27）；同榜 Show HN《Fuck_data_brokers.py》（数据经纪商一键删除脚本）<b>204分</b>、《CTO of 'RansomwareHelp' Indicted》<b>188分</b>——安全/隐私主题占首页3席</li>
+      <li>事件事实（1Password 官方博客，链接已验证可访问）：11-19 发现攻击者入侵员工企业 GitHub 账号→推送恶意代码、访问私有源码与部分客户元数据；11-25 公告：部分客户姓名/邮箱/最后登录时间泄露，密码库与 Secret Key 未被访问</li>
+      <li>YouTube 本周筛选搜索「1Password」：區塊勢《密碼管理器 1Password 被駭！…GitHub 員工帳號 Secret Key》<b>19,047次观看（12小时前）</b>、數位時代 Official 357次（12h）、redteamed 77次（10h）等 <b>24小时内 6 条</b>解读（浏览器桥接真实抓取）</li>
+      <li>Reddit：r/sysadmin《1Password security incident (don't panic yet)》、r/1Password 官方公告帖、r/todoist《Security incident in November 2026》（11-23 另一起生产系统入侵）三帖同周；X：@1Password 官方声明、@engadget《1Password says it was hacked but users' vaults are safe》等（搜索引擎索引获取，Reddit 直连被风控未能直接打开）</li>
+      <li>Product Hunt 今日实时榜：Kagi（隐私生态，含 Kagi Mail「Private email」）<b>103票</b>、Meboki「Offline grammar checker for any Mac app」<b>77票</b>（Privacy）——隐私优先产品持续有票（真实抓取）</li>
+      <li>B站搜索「1Password」（按播放）：TESTV 2019《其实你的密码并不安全》<b>44.1万</b>、零度解说 2025《Windows 11 内建1Password》<b>25万</b>、Vaultwarden 自建教程 3.5万/2.9万——前排全是 2019–2025 旧内容，本次事件中文解读位空缺（真实抓取）</li>
+      <li>知乎热榜第14位《业主搜索发现有 WiFi 名诅咒自家 8 岁孩子…该如何合法维权？》<b>218回答 / 420关注</b>、第3位小米YU7前视摄像头集中故障 <b>175回答 / 390关注</b>（热榜API真实抓取）——家庭网络安全与硬件数据安全焦虑同步在榜</li>
     </ul></dd>
-    <dt>目标人群</dt><dd>主机玩家与云玩家、攻略检索用户（隐藏要素/收集/经济系统）、游戏资讯流量读者、外设购买决策人群</dd>
-    <dt>变现路径</dt><dd>①B站创作激励+YouTube广告分成（播放量即收益，量级随流量）；②游戏周边/外设带货（手柄、采集卡、座椅、点卡，客单价50–300元，佣金5–20%，估算）；③攻略汇总电子书/付费专栏9.9–29.9元（估算）</dd>
-    <dt>启动门槛</dt><dd>技能：游戏理解+剪辑+信息整理；资金：0–3000元（素材可录屏/二创解说起步）；时间：1–2周起号，窗口期30–90天</dd>
-    <dt>竞争情况</dt><dd>头部游戏UP主已抢「全网首发通关」位；但全收集图鉴、经济系统、隐藏要素、长尾BUG等细分位仍空缺，中文检索需求远未被满足；PC版正式发售后还有第二波流量</dd>
+    <dt>目标人群</dt><dd>使用密码管理器/多账号的职场人与开发者、无IT安全岗的小企业主（10–50人）、家有小孩关注网络安全的业主、隐私敏感人群</dd>
+    <dt>变现路径</dt><dd>①B站/知乎/YouTube 事件解读 +「安全体检」教程内容：创作激励 + 安全软件/密钥联盟佣金 20–40%（估算）；②付费服务：个人/小团队「账号安全体检+配置」199–999元/次（估算）；③硬件密钥（YubiKey/Passkey 兼容）带货，客单价150–500元（估算）；④小企业安全意识培训 2000–8000元/场（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：基础安全知识 + 内容表达（不需要渗透测试能力）；资金：＜1000元（可买1–2个硬件密钥做实测）；时间：3–7天出首条解读，2–4周建立「安全体检」服务SOP</dd>
+    <dt>竞争情况</dt><dd>英文侧解读已饱和（YouTube 24h内6+条、HN 702评）；中文侧 B站前排仍为2019–2025旧内容，「事件解读→我该怎么办→安全体检」实操位空缺；知乎相关问题以法律/邻里角度为主，技术实操位空缺。⚠️合规：只做公开信息解读与防御性配置教学，不涉及漏洞利用、不传播泄露数据</dd>
     <dt>来源链接</dt><dd>
-      <a href="https://www.bilibili.com/video/BV1NDsS6UE8D/" target="_blank" rel="noopener">B站：GTA6全任务通关攻略（976.2万播放）</a> ·
-      <a href="https://www.bilibili.com/video/BV1t9sk6YE23/" target="_blank" rel="noopener">B站：主线全流程实况解说（289.1万播放）</a> ·
-      <a href="https://www.youtube.com/watch?v=e7XC0ppXU2E" target="_blank" rel="noopener">YouTube：大耳朵TV GTA6实测（44万观看）</a> ·
-      <a href="https://www.youtube.com/watch?v=heVefnj9WPw" target="_blank" rel="noopener">YouTube：阿航GTA6直播（71万观看）</a> ·
-      <a href="https://www.zhihu.com/question/2108737825650762733" target="_blank" rel="noopener">知乎热榜：GTA6 AI移植PC讨论（158回答）</a>
+      <a href="https://news.ycombinator.com/item?id=50644817" target="_blank" rel="noopener">HN：1Password Security Incident（1626分/702评）</a> ·
+      <a href="https://1password.com/blog/update-on-nov-2026-security-incident" target="_blank" rel="noopener">1Password 官方公告</a> ·
+      <a href="https://www.youtube.com/watch?v=9CS_Ca70w1U" target="_blank" rel="noopener">YouTube：區塊勢 1Password 被駭（19,047观看/12h）</a> ·
+      <a href="https://www.youtube.com/watch?v=_r5gV2BNlss" target="_blank" rel="noopener">YouTube：數位時代 1Password Hacked</a> ·
+      <a href="https://www.reddit.com/r/sysadmin/comments/1y5d4je/1password_security_incident_dont_panic_yet" target="_blank" rel="noopener">Reddit r/sysadmin 讨论</a> ·
+      <a href="https://x.com/1Password/status/2125642686443258030" target="_blank" rel="noopener">X：@1Password 官方声明</a> ·
+      <a href="https://x.com/engadget/status/2126044329185521706" target="_blank" rel="noopener">X：@engadget 报道</a> ·
+      <a href="https://news.ycombinator.com/item?id=50658191" target="_blank" rel="noopener">HN：Fuck_data_brokers.py（204分）</a> ·
+      <a href="https://www.bilibili.com/video/BV1M4411H7Sf/" target="_blank" rel="noopener">B站：TESTV 1Password 值不值得买（44.1万播放，2019）</a> ·
+      <a href="https://www.zhihu.com/question/2108982413300864900" target="_blank" rel="noopener">知乎：WiFi名诅咒孩子如何维权（218回答）</a>
     </dd>
   </dl>
 </div>
 
 <div class="card">
-  <div class="rank"><span class="num">2</span><span class="name">MCP×AI Agent 垂直场景小工具（出海SaaS/买断）<span class="tag">PH+HN+知乎三源验证 · 连续第2日在榜</span></span></div>
+  <div class="rank"><span class="num">2</span><span class="name">「评论区摄影点评/锐评」内容矩阵 → 手机摄影课程 + 修图预设 + 付费点评<span class="tag">抖音 + B站 + 知乎 三平台验证 · 今日热词</span></span></div>
   <dl>
-    <dt>机会名称</dt><dd>围绕MCP协议与AI Agent做「垂直场景小工具」（记忆/编排/本地控制/获客），面向全球solopreneur与独立开发者</dd>
+    <dt>机会名称</dt><dd>复制已被验证的「投稿→点评/锐评」内容形式做手机摄影账号，沉淀课程、预设与一对一点评服务</dd>
     <dt>需求信号</dt><dd><ul>
-      <li>Product Hunt 今日榜AI Agent/MCP类继续霸榜：MyClaw 3.0「always-on AI team with shared memory」、Canva MCP「Turn any AI agent into a creative powerhouse」、SteerLatch「Connect MCP-compatible AIs to your computer」、Omi X 2.0、Tendeck「Run all your Claude Code and Codex agents on one Mac board」（web reader真实抓取，观察日2026-11-26）；产品页链接已经浏览器逐一验证可访问</li>
-      <li>PH周榜 RankSpot「SEO and AI Search execution layer for agents」<b>471票</b>、月榜 Spira Maxima<b>696票</b>（真实抓取）——agent配套工具连续霸榜，需求持续而非一次性</li>
-      <li>PH官方「Trending categories」前三：Vibe Coding Tools / AI Coding Agents / MCP（真实抓取）——生态位本身成为平台级趋势</li>
-      <li>Hacker News首页：《Smart people who give a shit use tools》<b>256分/196评论</b>（Algolia API真实抓取）；Show HN《An agent skill that optimizes code with falsifiable hypotheses》63分；GPT-6.2 Astra打破Google内部代码高尔夫纪录194分——模型能力与agent工作流是当下技术社区最热议题</li>
-      <li>知乎热榜在榜：《豆包和 DeepSeek 哪个好用？》<b>133回答/352关注</b>（热榜API真实抓取）——中文用户AI工具选型与自动化刚需同步高热</li>
+      <li>抖音热搜榜第8位《评论区摄影作品点评大赛开启》热度<b>819.8万</b>（热搜词榜API真实抓取，观察日2026-11-27）——「投稿→被点评」已是平台级热门玩法</li>
+      <li>B站搜索「手机摄影 点评」（按播放）：摄影恩哥「评论区摄影大赛」系列多条百万级——《极致得锐评与治愈系氛围感佳作合集》<b>370.7万播放 / 2748弹幕</b>（1月30日）、《意境篇》<b>241.9万</b>（2月20日）、《中秋系列》<b>238.1万</b>（2025-10-06）、《一边是黑暗的自由》<b>217.9万</b>、《励志篇》<b>157.2万</b>（2025-11-08）、《锐评夕阳篇》<b>151万</b>；王守义收音机《照片点评，来看看摄影天赋怪们是如何构图》<b>150.1万</b>（11月4日，本月新百万）（浏览器桥接DOM真实抓取）</li>
+      <li>知乎热榜第7位《如何评价极客湾发布的手机影像大横评视频？》<b>35回答 / 121万热度</b>；B站排行榜第23位同视频 <b>91.1万播放</b>（两平台API真实抓取）——手机影像是当下消费电子最热议题</li>
+      <li>抖音热搜第18位《冰封玫瑰是哈尔滨冬日独有的浪漫》<b>771.7万</b>——冬季旅拍题材同步在热（真实抓取）</li>
     </ul></dd>
-    <dt>目标人群</dt><dd>独立开发者、solopreneur、无市场预算的出海小团队、重度AI工具用户</dd>
-    <dt>变现路径</dt><dd>①SaaS订阅$9–49/月（估算）；②一次性买断$29–99（估算）；③PH/HN免费冷启动获客，边际成本≈0</dd>
-    <dt>启动门槛</dt><dd>技能：全栈+Claude Code/Cursor/Antigravity等AI编程（YouTube实测教程3天5.7万观看说明上手路径成熟）；资金：域名+托管＜500元；时间：2–4周MVP并上PH发布</dd>
-    <dt>竞争情况</dt><dd>通用agent工具已拥挤（PH单日5+款）；差异化在垂直场景（特定行业工作流、中文交付层、桌面本地控制）；生态红利窗口仍在扩大期</dd>
+    <dt>目标人群</dt><dd>手机摄影爱好者（入门–进阶）、旅拍/打卡人群、想被点评构图的小白、想用手机接单的轻摄影师</dd>
+    <dt>变现路径</dt><dd>①「投稿点评」系列内容（B站/抖音/小红书）创作激励 + 手机/镜头/稳定器带货（佣金5–20%，估算）；②手机摄影课程 99–299元（估算）；③修图预设/LUT 9.9–39元/套（估算）；④一对一点评/修图 19.9–49元/次（估算）；⑤本地轻旅拍跟拍 300–800元/单（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：手机摄影 + 基础修图 + 点评表达；资金：＜500元（一部手机 + 免费/低价修图App）；时间：1周出首条「点评合集」，30天内跑通「投稿→点评→课程」闭环</dd>
+    <dt>竞争情况</dt><dd>B站已有摄影恩哥、王守义收音机等验证过的「点评合集」头部（百万级），但形式为UGC合集、制作门槛低，新账号可从垂直题材（手机+冬季旅拍、亲子、美食）切入；抖音热词显示该玩法正向短视频平台扩散，先发窗口约4–8周。⚠️引用他人投稿需取得授权</dd>
     <dt>来源链接</dt><dd>
-      <a href="https://www.producthunt.com/posts/myclaw-3-0" target="_blank" rel="noopener">PH：MyClaw 3.0（今日榜AI团队产品，已验证）</a> ·
-      <a href="https://www.producthunt.com/posts/canva-mcp" target="_blank" rel="noopener">PH：Canva MCP（已验证，12月3日上线）</a> ·
-      <a href="https://news.ycombinator.com/item?id=50639698" target="_blank" rel="noopener">HN：Smart people who give a shit use tools（256分）</a> ·
-      <a href="https://www.zhihu.com/question/2042157689262826090" target="_blank" rel="noopener">知乎：豆包和DeepSeek哪个好用（133回答）</a>
+      <a href="https://www.bilibili.com/video/BV1kK6vBqEFd/" target="_blank" rel="noopener">B站：摄影恩哥 评论区摄影大赛锐评合集（370.7万播放）</a> ·
+      <a href="https://www.bilibili.com/video/BV1yBZkB6EXa/" target="_blank" rel="noopener">B站：摄影恩哥 意境篇（241.9万播放）</a> ·
+      <a href="https://www.bilibili.com/video/BV1UzxQ6ZEiH/" target="_blank" rel="noopener">B站：王守义收音机 照片点评（150.1万播放，11月4日）</a> ·
+      <a href="https://www.bilibili.com/video/BV1c5yzzGEL9" target="_blank" rel="noopener">B站：极客湾手机影像大横评（91.1万播放）</a> ·
+      <a href="https://www.zhihu.com/question/2108960337538164548" target="_blank" rel="noopener">知乎：如何评价极客湾大横评（35回答）</a>
     </dd>
   </dl>
 </div>
 
 <div class="card">
-  <div class="rank"><span class="num">3</span><span class="name">AI短剧「AI全民制作人」持续红利（承接制作/教学/自营）<span class="tag">B站+PH双源验证 · 连续推荐，优先级下调</span></span></div>
+  <div class="rank"><span class="num">3</span><span class="name">AI 搜索可见性（GEO/AEO）出海服务与「AI 爬虫视角」体检<span class="tag">PH + HN + Reddit + YouTube + B站 五源验证 · PH 连续两日在榜</span></span></div>
   <dl>
-    <dt>机会名称</dt><dd>AI短剧/AI续写内容产能变现：承制商单+制作教学+自营账号分成三线并行（本报告连续第2日验证，按去重规则优先级下调一档）</dd>
+    <dt>机会名称</dt><dd>帮出海独立站/SaaS/本地服务商「被 ChatGPT/Perplexity/Gemini 正确引用」：AI 可见性体检 + 结构化内容优化 + 月度监测，面向英语市场 SMB</dd>
     <dt>需求信号</dt><dd><ul>
-      <li>B站排行榜<b>当日第1位</b>《当我用AI续写爱情公寓4关谷悠悠婚礼【AI全民制作人】》播放<b>970.6万</b>、点赞<b>104.9万</b>（排行榜API真实抓取，观察日2026-11-26）——较昨日824.2万仍在增长，且已霸榜多日</li>
-      <li>B站排行榜第16位《153分钟超长大合集！【末日来临，我从吃丧尸开始成神！】…【AI全民制作人】》播放<b>111.3万</b>（真实抓取）——同一标签下多条内容上榜，品类而非单品</li>
-      <li>Product Hunt 今日榜 MAGI-2「Sand AI's 480B model for cinematic video generation」<b>82票</b>、周榜 Creatify Max「Your ad teammate, from strategy to creation」<b>438票</b>、月榜 Spira Maxima「script→viral videos」<b>696票</b>（真实抓取）——海外AI视频产能工具同步高热</li>
+      <li>Product Hunt 今日实时榜第4位 Bifura「See your website the way AI agents do」<b>143票 / 19评论</b>（Marketing·SEO·AI，浏览器桥接真实抓取，观察日2026-11-27）；官方描述「AI assistants now read websites for your buyers… shows what they get and get wrong, and lets you test fixes in a sandbox」（产品页已浏览器验证可访问）；昨日周榜 RankSpot「SEO and AI Search execution layer for agents」471票——AI搜索可见性连续两日在榜</li>
+      <li>Hacker News 首页《Google Will Make AI Agents Use Its MCP Servers》<b>206分 / 185评论</b>（真实抓取）——AI 代理读取网站/服务成为平台级方向</li>
+      <li>Reddit r/SaaS、r/GEO_optimization、r/AskMarketing 同帖《Roast my side-project: I'm building a generative engine…》（面向SMB的GEO平台）：核心反馈「SMB 不要可见性仪表盘，要 AI 搜索带来的 demo/线索」；另有「AI 引擎引用 Reddit 多于企业官网」讨论（搜索引擎索引获取）</li>
+      <li>YouTube 本周筛选搜索「GEO AI search optimization」：<b>24小时内 6 个不同频道</b>发布 GEO/AEO 视频（SEO vs GEO vs AEO、GEO explained: how firms get into ChatGPT's answers 等，播放量 0–8次）——供给端正涌入（真实抓取）</li>
+      <li>B站搜索「GEO AI搜索优化」（按播放）：《26年GEO3.0优化方法教程，deepSeek、豆包、元宝…》<b>8.2万</b>（2月8日）、《26年4月更新GEO优化教程在315之后如何合规运营》<b>8864</b>（4月6日）、《大白话讲透 GEO》8590、《GEO生成式引擎优化第1课》7047（2025-08）、《2026最新AI搜索GEO优化落地实操》4056——中文侧教程自 2025-08 起持续供给、量级数千到 8 万，且已出现「315 之后合规」议题（真实抓取）</li>
     </ul></dd>
-    <dt>目标人群</dt><dd>MCN/网文版权方（承制客户）、想入局创作者（教学客户）、平台流量分成</dd>
-    <dt>变现路径</dt><dd>①短剧/漫剧代制作500–5000元/集（估算）；②教程/workflow模板99–999元/份（估算）；③自营账号创作激励+商单</dd>
-    <dt>启动门槛</dt><dd>技能：即梦/可灵/豆包+剪映+叙事；资金：工具订阅300–1000元/月（总投入＜5000元）；时间：单人7–30天出首部成品</dd>
-    <dt>竞争情况</dt><dd>赛道已连续霸榜多日、入局者加速（教学市场开始拥挤）；「中式题材+人物一致性+长时长」合格产能仍稀缺，但先发红利较昨日收窄</dd>
+    <dt>目标人群</dt><dd>出海独立站/SaaS/本地服务商（英语市场 SMB）、跨境营销代理；中文侧：想做 AI 搜索获客的中小商家</dd>
+    <dt>变现路径</dt><dd>①「AI 可见性体检+优化」服务 $300–1500/项目（海外SMB，估算）或 3000–10000元/项目（国内，估算）；②月度监测订阅 $49–199/月（估算）；③llms.txt/结构化内容改造一次性 $200–500（估算）；④教程/社群 299–999元（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：SEO 基础 + 内容结构化 + 会用 ChatGPT/Perplexity/豆包做引用测试 + 基础英语；资金：＜500元（域名 + LLM API 额度）；时间：1–2周做出体检模板与 3 个案例，30天内接首批客户</dd>
+    <dt>竞争情况</dt><dd>海外工具端已拥挤（PH 每周多款、HubSpot 已出 AEO Grader），但「服务」端对小团队仍开放；中文侧 B站 教程供给已起（获客圈打法），客单价被压。⚠️合规红线：B站已出现「315 之后如何合规运营」议题，说明部分 GEO 打法（刷假评/批量垃圾内容/伪造第三方背书）已被监管点名——只做「让真实信息被 AI 正确引用」的结构化优化，不做伪造内容</dd>
     <dt>来源链接</dt><dd>
-      <a href="https://www.bilibili.com/video/BV1atse6EEfx" target="_blank" rel="noopener">B站：AI续写爱情公寓4（当日榜1，970.6万播放）</a> ·
-      <a href="https://www.bilibili.com/video/BV16nyXzyEuQ" target="_blank" rel="noopener">B站：AI全民制作人末日合集（111.3万播放）</a> ·
-      <a href="https://www.producthunt.com/" target="_blank" rel="noopener">Product Hunt日榜（MAGI-2等AI视频工具）</a>
+      <a href="https://www.producthunt.com/products/bifura" target="_blank" rel="noopener">PH：Bifura – See your website the way AI agents do（143票）</a> ·
+      <a href="https://news.ycombinator.com/item?id=50653477" target="_blank" rel="noopener">HN：Google Will Make AI Agents Use Its MCP Servers（206分/185评）</a> ·
+      <a href="https://www.reddit.com/r/SaaS/comments/1rkji4s/roast_my_sideproject_im_building_a_generative" target="_blank" rel="noopener">Reddit r/SaaS：Roast my side-project GEO 平台</a> ·
+      <a href="https://www.bilibili.com/video/BV1nicFzQEiD/" target="_blank" rel="noopener">B站：26年GEO3.0优化方法教程（8.2万播放）</a> ·
+      <a href="https://www.bilibili.com/video/BV1zDSoBEEkF/" target="_blank" rel="noopener">B站：GEO 优化在315之后如何合规运营（8864播放）</a>
     </dd>
   </dl>
 </div>
 
 <div class="card">
-  <div class="rank"><span class="num">4</span><span class="name">冰雪季文旅内容+装备带货/旅拍服务<span class="tag">小红书+抖音+B站三平台验证 · 季节刚需</span></span></div>
+  <div class="rank"><span class="num">4</span><span class="name">MCP×AI Agent 垂直场景小工具（出海 SaaS/买断）<span class="tag">PH + HN + YouTube 三源验证 · 连续第3日在榜，优先级下调</span></span></div>
   <dl>
-    <dt>机会名称</dt><dd>冰雪季（12月–2月）文旅攻略内容矩阵：装备带货+目的地长尾攻略+本地旅拍跟拍服务</dd>
+    <dt>机会名称</dt><dd>围绕 AI Agent 工作流的「垂直细分位」做小工具（QA 验证、长期记忆、团队协作、视频剪辑等），面向全球独立开发者与 AI 重度用户（本报告连续第3日验证，按去重规则下调一档）</dd>
     <dt>需求信号</dt><dd><ul>
-      <li>小红书发现页《竟有如此美景！来漠河一定要玩一次泼水成冰！》点赞<b>10万+</b>（DOM真实抓取，观察日2026-11-26）——极寒目的地体验类内容正在爆量</li>
-      <li>抖音热搜榜第5位《哈尔滨冰雪大世界像童话世界》热度<b>1053.5万</b>（热搜词榜API真实抓取）——冰雪大世界尚未开园即已预热霸榜</li>
-      <li>B站搜索（综合排序）：第28届哈尔滨冰雪大世界官方系列更新中（存冰启用、主塔「梦想之树」钢结构完工、造雪现场等，真实抓取）——开园前的建造期预热内容已稳定产出，开园后将迎来流量峰值</li>
-      <li>抖音热搜同榜《啊 是丹东大草莓来了》热度<b>877.4万</b>（真实抓取）——冬季应季生鲜/好物种草情绪同步在高位</li>
+      <li>Product Hunt 今日实时榜前三全部是 Agent/MCP 工具：Hub「Run 100 Claude Code or Codex sessions like 5」<b>356票 / 168评论</b>（开源）、QA.tech MCP「Verify every change from your IDE with QA agents」<b>180票</b>、ExtraOrbital「Open bar databases, storage buckets & AI keys for agents」<b>164票</b>；另 Monton（agency 忙碌工作代理）88票、DeskFleet（团队机器上跑 coding agents）86票、Remora（agent 长期记忆）81票、Flurra（让 Claude/ChatGPT 剪视频）77票（浏览器桥接真实抓取，观察日2026-11-27）</li>
+      <li>Hacker News 首页：Moat「OpenRouter replacement」<b>242分 / 135评</b>、《OpenAI may be in cost control mode》<b>237分 / 220评</b>、AMD 版 llama.cpp <b>265分</b>、《AI made self-hosting fun again》<b>179分 / 104评</b>——模型网关/降本/本地推理是本周子主题（真实抓取）</li>
+      <li>YouTube 登录态首页：AI超元域《超越Codex！Antigravity三大新特性实测：Gemini 4 Neon…Swarm蜂群协作》<b>4.4万观看（1天前）</b>、技术爬爬虾《如何长期稳定使用Claude订阅》<b>30万观看</b>（1个月前）——中文 AI 编程工具教学需求持续（真实抓取）</li>
     </ul></dd>
-    <dt>目标人群</dt><dd>南方游客/亲子家庭（出行决策期）、摄影爱好者、冰雪装备购买人群</dd>
-    <dt>变现路径</dt><dd>①冰雪装备带货（羽绒服/暖宝宝/防滑链/雪具/相机防潮，客单价50–500元，佣金5–15%，估算）；②攻略内容广告与平台分成；③本地旅拍/跟拍服务300–1000元/单（估算）</dd>
-    <dt>启动门槛</dt><dd>技能：内容拍摄+选品；资金：0–2000元（样品+基础装备）；时间：1–2周起号，开园节点（12月中下旬）前完成布局</dd>
-    <dt>竞争情况</dt><dd>哈尔滨主目的地内容大盘拥挤；漠河/长白山/伊春等长尾目的地+垂直装备测评位空缺明显；季节性窗口明确，12月开园后竞争将快速加剧</dd>
+    <dt>目标人群</dt><dd>独立开发者、AI 重度用户、出海小团队、中文 AI 工具学习者</dd>
+    <dt>变现路径</dt><dd>①SaaS 订阅 $9–49/月（估算）；②一次性买断 $29–99（估算）；③中文 AI 编程工具教程/社群 99–499元（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：全栈 + AI 编程工具（Claude Code/Codex/Antigravity）；资金：＜500元；时间：2–4周 MVP 并上 PH</dd>
+    <dt>竞争情况</dt><dd>连续第3日验证但通用 agent 工具已严重拥挤（PH 单日前十占 7 席），按去重规则下调；差异化窗口在本周新细分位（IDE 内 QA、agent 记忆、团队机器协同、MCP 剪视频）与「中文交付层」</dd>
     <dt>来源链接</dt><dd>
-      <a href="https://www.xiaohongshu.com/explore/6add23c300000000310386fd" target="_blank" rel="noopener">小红书：漠河泼水成冰（10万+赞）</a> ·
-      <a href="https://www.bilibili.com/video/BV1U3yozTEPK" target="_blank" rel="noopener">B站：第28届冰雪大世界存冰启用</a> ·
-      <a href="https://www.bilibili.com/video/BV1jhy3zoEoY" target="_blank" rel="noopener">B站：冰雪大世界主塔施工预告</a>
+      <a href="https://www.producthunt.com/products/hub-20" target="_blank" rel="noopener">PH：Hub（356票/168评）</a> ·
+      <a href="https://www.producthunt.com/products/qa-tech" target="_blank" rel="noopener">PH：QA.tech MCP（180票）</a> ·
+      <a href="https://news.ycombinator.com/item?id=50652184" target="_blank" rel="noopener">HN：Moat: OpenRouter replacement（242分/135评）</a> ·
+      <a href="https://www.youtube.com/watch?v=oz6sPkw6owI" target="_blank" rel="noopener">YouTube：Antigravity 三大新特性实测（4.4万观看/1天）</a> ·
+      <a href="https://www.youtube.com/watch?v=8lNWd7PvvCU" target="_blank" rel="noopener">YouTube：如何长期稳定使用Claude订阅（30万观看）</a>
     </dd>
   </dl>
 </div>
 
 <div class="card">
-  <div class="rank"><span class="num">5</span><span class="name">「可食用脆皮捏捏」新变体（捏捏乐赛道升级）<span class="tag">抖音+B站双源验证</span></span></div>
+  <div class="rank"><span class="num">5</span><span class="name">冬日美食/网红小吃复刻配方 + 冬季养生甜品<span class="tag">抖音 + 知乎 + B站 + 小红书 四平台验证 · 季节刚需，赛道降级</span></span></div>
   <dl>
-    <dt>机会名称</dt><dd>借「可食用脆皮捏捏」新热点做手工捏捏成品/材料包售卖+教程内容（解压手作赛道的新变体位）</dd>
+    <dt>机会名称</dt><dd>借本周新热词（咒语糖葫芦、木薯桃胶炖奶）做「网红小吃复刻 + 冬日养生甜品」教程，沉淀配方数字产品与食材包带货</dd>
     <dt>需求信号</dt><dd><ul>
-      <li>抖音热搜榜《可以吃的脆皮捏捏怎么做》热度<b>910.8万</b>（热搜词榜API真实抓取，观察日2026-11-26）——「怎么做」检索型热词=强制作/复刻需求</li>
-      <li>B站搜索：《这就是可以吃的脆皮捏捏吗！？！？》播放<b>44.8万</b>/弹幕179、《「捏捏乐」🍫🔮》播放<b>117.6万</b>/弹幕248（搜索页真实抓取）</li>
-      <li>B站《我把全网热梗做成了捏捏乐【B站AI创造公开赛】》播放<b>343.8万</b>/弹幕862（真实抓取）——「热梗→捏捏」二创玩法被平台活动官方扶持</li>
+      <li>抖音热搜榜（热搜词榜API真实抓取，观察日2026-11-27）：《北京也有网红咒语糖葫芦》<b>776.2万</b>（第14位）、《已被这届烟火榜美食选中》<b>769.6万</b>（第20位）、《一碗面召唤许凯挑战》<b>765.2万</b>（第30位）、《特朗普念念不忘帽子菜可能是它》<b>763.0万</b>（第42位）、《冬天就爱这碗糯糯的木薯桃胶炖奶》<b>762.3万</b>（第46位）——50条热词中5条为美食/小吃</li>
+      <li>知乎热榜第27位《黄瓜的美味吃法有哪些？》<b>67万热度</b>、第28位《有什么简单易上手的美食推荐吗？最好可以有详细的步骤?》<b>66万热度</b>——两条「怎么做」型问题同时在榜（真实抓取）</li>
+      <li>B站排行榜第9位《同样是水果腌肉 为啥有人是"国宴"…》<b>345.0万播放 / 16.4万点赞</b>（三农）、第16位《我想回家吃饭（两小时大电影）》<b>301.7万</b>、第33位《你没见过的豆豆父女》<b>163.2万</b>（美食记录）（排行榜API真实抓取）</li>
+      <li>小红书发现页《千丝牛肉辣条》<b>2366赞</b>、《今日七个人的工作餐》221赞（DOM真实抓取）——小吃复刻/工作餐在生活流中有稳定互动</li>
     </ul></dd>
-    <dt>目标人群</dt><dd>解压玩具爱好者、手工圈层、学生党、年轻女性（18–30岁）</dd>
-    <dt>变现路径</dt><dd>①非食品捏捏成品30–80元/个（估算）；②DIY材料包39–129元/套（估算）；③制作教程内容+带货分成</dd>
-    <dt>启动门槛</dt><dd>技能：手作+拍摄；资金：模具/材料500–1500元；时间：1–2周出首批成品</dd>
-    <dt>竞争情况</dt><dd>捏捏乐为延续2年的成熟赛道（按去重规则整体降级）；但「可食用脆皮」为本周新变体位，制作门槛低、复刻窗口短；⚠️可食用变体涉及自制食品销售合规（需生产资质），建议以非食品解压玩具+材料包路线落地</dd>
+    <dt>目标人群</dt><dd>20–35岁独居/合租年轻人、想摆摊/做私房的人、冬日养生人群（女性为主）、宝妈</dd>
+    <dt>变现路径</dt><dd>①「网红小吃复刻」教程内容 + 配方卡/步骤图数字产品 9.9–49元（估算）；②食材包/模具带货（客单价29–99元，佣金10–30%，估算）；③私房/摆摊配方合集 99–199元（估算）；④冬季养生甜品（桃胶/炖奶/糖水）内容 + 食材带货</dd>
+    <dt>启动门槛</dt><dd>技能：家常烹饪 + 拍摄；资金：500–1500元（食材 + 基础道具）；时间：1–2周出首批复刻，30天内出配方合集</dd>
+    <dt>竞争情况</dt><dd>美食教程是长期红海（按去重规则整体降级）；但「本周新热词复刻」（咒语糖葫芦）与「冬日养生甜品」是短窗口新变体位，配方类数字产品边际成本≈0。⚠️自制食品销售需食品经营资质，建议以「教程+配方+食材包」路线落地，不直接售卖自制食品</dd>
     <dt>来源链接</dt><dd>
-      <a href="https://www.bilibili.com/video/BV116yWzuEXg/" target="_blank" rel="noopener">B站：可食用脆皮捏捏（44.8万播放）</a> ·
-      <a href="https://www.bilibili.com/video/BV1bWtzz7EQa/" target="_blank" rel="noopener">B站：捏捏乐合集（117.6万播放）</a> ·
-      <a href="https://www.bilibili.com/video/BV173b16eEPD/" target="_blank" rel="noopener">B站：热梗捏捏乐AI创造公开赛（343.8万播放）</a>
+      <a href="https://www.bilibili.com/video/BV1cpyXz5ETC" target="_blank" rel="noopener">B站：水果腌肉 国宴 vs 翻车（345.0万播放）</a> ·
+      <a href="https://www.bilibili.com/video/BV1pFWv6YESn" target="_blank" rel="noopener">B站：你没见过的豆豆父女（163.2万播放，美食记录）</a> ·
+      <a href="https://www.zhihu.com/question/1889815639604044796" target="_blank" rel="noopener">知乎：有什么简单易上手的美食推荐（66万热度）</a> ·
+      <a href="https://www.zhihu.com/question/1909499309847721324" target="_blank" rel="noopener">知乎：黄瓜的美味吃法有哪些（67万热度）</a> ·
+      <a href="https://www.xiaohongshu.com/explore/6ae6c716000000001a0205cf?xsec_token=ABZlciCb3s3BQXY" target="_blank" rel="noopener">小红书：千丝牛肉辣条（2366赞）</a>
     </dd>
   </dl>
 </div>
 
 <div class="card">
-  <div class="rank"><span class="num">6</span><span class="name">「反内耗」情绪慰藉内容+轻数字产品<span class="tag">B站+小红书+抖音三平台验证</span></span></div>
+  <div class="rank"><span class="num">6</span><span class="name">冬季季节性消费内容：冬日/圣诞穿搭 + 冰雪文旅<span class="tag">抖音 + 知乎 + B站 三平台验证 · 连续第2日，降级</span></span></div>
   <dl>
-    <dt>机会名称</dt><dd>围绕「别人过得好≠你要扣自己的分」式反内耗叙事做内容账号，沉淀晚安文案/冥想音频等轻数字产品与书籍带货</dd>
+    <dt>机会名称</dt><dd>冬日/圣诞/年会穿搭内容与服饰带货 + 冰雪目的地长尾攻略与旅拍服务（昨日报告第4位的延续，新增「高端户外平替」「年会穿搭」切口）</dd>
     <dt>需求信号</dt><dd><ul>
-      <li>B站排行榜《“别人过得好 你就要扣自己的分吗”》（毕检索）播放<b>367.4万</b>、点赞<b>25.5万</b>（排行榜API真实抓取，观察日2026-11-26）</li>
-      <li>小红书发现页《中国人的劳累其实超过了很多人的想象》点赞<b>5万</b>（DOM真实抓取）——集体情绪共鸣类内容持续高位</li>
-      <li>抖音热搜榜《同频朋友是最好的生日礼物》热度<b>918.8万</b>、《太阳照在我手上好干净》热度<b>792.1万</b>（热搜词榜API真实抓取）——情绪价值类话题同榜双条</li>
+      <li>抖音热搜榜 50 条中 5 条穿搭相关：《普通人冬日彩色穿搭公式》<b>818.8万</b>（第9位）、《提前预习圣诞穿搭》<b>768.5万</b>（第23位）、《毛茸茸氛围感有了》<b>764.4万</b>（第36位）、《淡人一周穿搭合集》<b>764.3万</b>（第37位）、《赵奕欢酷飒黑穿搭杀疯了》<b>762.3万</b>（第47位）；冰雪文旅：《冰封玫瑰是哈尔滨冬日独有的浪漫》<b>771.7万</b>（第18位）、《天南地北我在各地赏雪》<b>769.4万</b>（第21位）（热搜词榜API真实抓取，观察日2026-11-27）</li>
+      <li>知乎热榜第9位《东北人好像比别的地方更痴迷于始祖鸟、可隆、迪桑特这些高价低性价比运动服饰，为什么会这样？》<b>79回答 / 108万热度</b>（真实抓取）——高端户外服饰消费是当下讨论焦点</li>
+      <li>B站搜索「冬日穿搭」（按播放）：《当你以为自己是韩剧穿搭出门》<b>480.6万</b>（2025-10）、《不同保暖程度的裤袜试穿效果对比》<b>323.4万</b>（2025-12）、《不同身材的人穿同样的衣服…进来看试穿》<b>195.8万</b>（2023-12）——穿搭为长青大盘（真实抓取）</li>
     </ul></dd>
-    <dt>目标人群</dt><dd>18–35岁职场焦虑人群、独居年轻人、考公考研压力人群</dd>
-    <dt>变现路径</dt><dd>①治愈文案集/冥想音频/壁纸等数字产品9.9–99元（估算）；②心理自助书籍带货（佣金10–40%）；③账号商单（情感/生活方式品牌）</dd>
-    <dt>启动门槛</dt><dd>技能：文案+剪辑；资金：＜500元；时间：1–3周起号</dd>
-    <dt>竞争情况</dt><dd>情绪内容为长青大盘、「反内耗」切口参与者多；但数字产品变现链路短、边际成本≈0，适合作为矩阵账号的第二曲线而非主业</dd>
+    <dt>目标人群</dt><dd>南方游客/亲子家庭、18–35岁女性（穿搭决策）、户外品牌平替需求人群、年会/圣诞场合穿搭人群</dd>
+    <dt>变现路径</dt><dd>①服饰/装备带货（平价户外/羽绒/配饰，客单价99–500元，佣金10–30%，估算）；②「年会/圣诞穿搭」合集内容 + 店铺合作；③冰雪目的地长尾攻略 + 本地旅拍跟拍 300–1000元/单（估算）</dd>
+    <dt>启动门槛</dt><dd>技能：搭配 + 拍摄；资金：0–2000元（样品/基础装备）；时间：1–2周起号</dd>
+    <dt>竞争情况</dt><dd>穿搭与冰雪文旅均为连续在榜的成熟赛道（昨日报告第4位），按去重规则下调；「高端户外品牌平替」「年会穿搭」（12月–1月）为季节性新增切口，窗口约6–8周</dd>
     <dt>来源链接</dt><dd>
-      <a href="https://www.bilibili.com/video/BV1oSyJz1EiC" target="_blank" rel="noopener">B站：别人过得好你就要扣自己的分吗（367.4万播放）</a> ·
-      <a href="https://www.xiaohongshu.com/explore/6ade9b2a00000000180257ae" target="_blank" rel="noopener">小红书：中国人的劳累（5万赞）</a>
+      <a href="https://www.zhihu.com/question/2107954937695163825" target="_blank" rel="noopener">知乎：东北人痴迷始祖鸟/可隆/迪桑特（79回答）</a> ·
+      <a href="https://www.bilibili.com/video/BV14YqWBBELD/" target="_blank" rel="noopener">B站：不同保暖程度的裤袜试穿对比（323.4万播放）</a>
     </dd>
   </dl>
+</div>
+
+<div class="card">
+  <div class="rank"><span class="num">7</span><span class="name">「一个人上班」孤独经济：线上共工/共学陪伴 + 情绪数字产品<span class="tag">知乎 + B站 + 抖音 + 小红书 四平台验证 · 连续第2日，降级</span></span></div>
+  <dl>
+    <dt>机会名称</dt><dd>围绕「一个人办公/远程孤独」做内容账号，沉淀「云共工/云自习」陪伴社群与情绪类数字产品（昨日报告第6位的延续，新增「一个人上班」切口）</dd>
+    <dt>需求信号</dt><dd><ul>
+      <li>知乎热榜第23位《如果一个月给你8000，但办公室永远只有你一个人，连说话的人都没有，你能坚持多久？》<b>572回答 / 712关注 / 69万热度</b>——本日热榜回答数最高的问题（热榜API真实抓取，观察日2026-11-27）</li>
+      <li>B站排行榜第2位《"别人过得好 你就要扣自己的分吗"》<b>415.7万播放 / 28.6万点赞</b>（昨日367.4万 → 今日415.7万，仍在增长）、第30位《考公务员很难，但是为人民服务却很容易！》<b>241.7万播放 / 37.9万点赞</b>（排行榜API真实抓取）</li>
+      <li>抖音热搜：《你别害怕就往前走》<b>767.8万</b>、《同频朋友是最好的生日礼物》<b>763.8万</b>、《还在留恋被窝的余温吗》<b>763.5万</b>（热搜词榜API真实抓取）</li>
+      <li>小红书发现页：《这真的是一个在校生所能承受的吗》<b>4.2万赞</b>、《斯坦福教授这段话让人醍醐灌顶》<b>2.9万赞</b>、《想用这个当pyq背景图，有无与之适配的头像》<b>1.5万赞</b>（DOM真实抓取）——情绪共鸣 +「背景图/头像套装」数字产品需求同步可见</li>
+    </ul></dd>
+    <dt>目标人群</dt><dd>一人公司/远程办公/驻外/小店主、考公考研独居青年、18–35岁职场焦虑人群</dd>
+    <dt>变现路径</dt><dd>①线上「云共工/云自习」直播或社群（陪伴+打卡）会员 19.9–99元/月（估算）；②情绪数字产品（晚安文案/冥想音频/朋友圈背景图+头像套装）9.9–49元（估算）；③心理自助书籍带货（佣金10–40%）；④账号商单</dd>
+    <dt>启动门槛</dt><dd>技能：文案 + 直播/剪辑；资金：＜500元；时间：1–3周起号</dd>
+    <dt>竞争情况</dt><dd>情绪内容为长青红海、昨日已列第6位，按去重规则继续下调；「一个人上班」是本日新增的高互动切口（572回答），「云共工」类产品尚无中文头部，适合作为矩阵账号第二曲线</dd>
+    <dt>来源链接</dt><dd>
+      <a href="https://www.zhihu.com/question/2107406132625069628" target="_blank" rel="noopener">知乎：8000一个月但办公室只有你一个人（572回答）</a> ·
+      <a href="https://www.bilibili.com/video/BV1oSyJz1EiC" target="_blank" rel="noopener">B站：别人过得好你就要扣自己的分吗（415.7万播放）</a> ·
+      <a href="https://www.bilibili.com/video/BV1uyyazBEUA" target="_blank" rel="noopener">B站：考公务员很难，但是为人民服务却很容易（241.7万播放）</a> ·
+      <a href="https://www.xiaohongshu.com/explore/6ae6c5f40000000027014274?xsec_token=ABZlciCb3s3BQXY" target="_blank" rel="noopener">小红书：这真的是一个在校生所能承受的吗（4.2万赞）</a> ·
+      <a href="https://www.xiaohongshu.com/explore/6ae548d6000000001a016061?xsec_token=ABf-75EqAOplQEv" target="_blank" rel="noopener">小红书：pyq背景图求适配头像（1.5万赞）</a>
+    </dd>
+  </dl>
+</div>
+
+<div class="carry">
+  <b>延续观察（连续多日在榜，按去重规则不单列）</b>：AI短剧「AI全民制作人」——B站排行榜第5位《当我用AI续写爱情公寓4…》<b>1078.0万播放 / 114.3万点赞</b>（昨日970.6万）、第8位《末日来临…超长大合集》<b>194.7万</b>（昨日111.3万），连续第3日霸榜（<a href="https://www.bilibili.com/video/BV1atse6EEfx" target="_blank" rel="noopener">BV1atse6EEfx</a>）；GTA 6——YouTube 登录态首页仍在推《GTA 6 Gameplay Walkthrough FULL GAME [4K PS5 PRO]》，昨日已列第1位，不重复。黑五（今日）为一次性节点，YouTube「Black Friday 2026 deals」5–12小时内 14 条 1千–14.6万观看，不作为可持续商机列入。
 </div>
 
 <h2>Top 3 推荐及理由</h2>
 <div class="card">
   <ol class="top3">
-    <li><b>GTA 6 发售期攻略内容矩阵（机会1）</b>——本日唯一「新窗口」级机会：三平台数据共振（B站攻略976.2万播放、YouTube单视频最高7315万观看、知乎热榜158回答），发售约一周、检索需求远未被满足，30–90天窗口明确；1人、0–3000元、1–2周起号全部满足，是清单中「时间×流量」杠杆最大的方向。注意规避破解/盗版内容红线，只做正版攻略与周边。</li>
-    <li><b>MCP×AI Agent 垂直小工具出海（机会2）</b>——连续第2日三源验证（PH今日榜+周榜+月榜霸榜、HN首页256分/196评、知乎133回答），需求已证明持续性而非脉冲；客单价与付费意愿被海外市场验证（订阅$9–49/月），AI编程工具成熟让单人2–4周可交付MVP，天花板最高，适合有编程基础的1–2人小团队。</li>
-    <li><b>冰雪季文旅内容+带货（机会4）</b>——季节刚需+门槛最低（0–2000元、1–2周）：小红书10万+赞笔记+抖音1053.5万热度热词+官方建造期预热三重信号，12月中下旬开园节点前布局窗口刚好≤30天；哈尔滨大盘拥挤但漠河等长尾目的地与装备测评位空缺，与机会1形成「内容带货+服务」互补组合。</li>
+    <li><b>账号安全体检（机会1）</b>——本日唯一「新窗口」级机会：三源共振（HN 1626分/702评、YouTube 12小时内 6 条解读、Reddit/X 多帖）+ PH 隐私产品持续有票；中文侧 B站前排仍是 2019–2025 旧内容，「事件解读→我该怎么办→安全体检」实操位空缺。1人、＜1000元、3–7天出首条，内容与服务双变现，窗口期为事件热度周期约 2–6 周。</li>
+    <li><b>评论区摄影点评（机会2）</b>——门槛最低且形式已被验证：抖音热词 819.8万 + B站「点评合集」系列 6 条百万级（最高 370.7万，本月仍有新百万）+ 知乎/B站极客湾横评共振；一部手机即可启动，「投稿→点评→预设/课程」闭环清晰，先发窗口 4–8 周。</li>
+    <li><b>GEO/AEO 出海服务（机会3）</b>——天花板最高：PH Bifura 143票（新）+ RankSpot 连续两日 + HN 206分 + Reddit SMB 真实需求讨论（「要线索不要仪表盘」）；1–2 人 2 周内可交付体检服务、$300–1500/项目；但必须严守合规（国内已出现「315 后合规」议题），只做结构化优化不做伪造内容。</li>
   </ol>
 </div>
 
@@ -228,20 +273,20 @@
 <h2>附：本次执行日志</h2>
 <table class="status">
   <tr><th>平台</th><th>采集状态</th><th>说明</th></tr>
-  <tr><td>知乎</td><td class="ok">✅ 成功</td><td>移动端热榜API，抓取30条在榜问题（回答数/关注数真实抓取）</td></tr>
-  <tr><td>B站</td><td class="ok">✅ 成功</td><td>排行榜API（当日40条，播放/点赞真实抓取）+搜索页3组（GTA6/捏捏乐/哈尔滨冰雪大世界，浏览器桥接DOM抓取）</td></tr>
-  <tr><td>Hacker News</td><td class="ok">✅ 成功</td><td>Algolia API，首页40条+AskHN 30条（分数/评论数真实抓取）</td></tr>
-  <tr><td>Product Hunt</td><td class="ok">✅ 成功</td><td>web reader抓取日榜+周榜+月榜；2个产品页链接经浏览器逐一验证可访问</td></tr>
-  <tr><td>YouTube</td><td class="ok">✅ 成功</td><td>浏览器桥接（登录态）首页+GTA6/Antigravity两组搜索（观看数真实抓取）；trending页已重定向为首页，未单列</td></tr>
+  <tr><td>知乎</td><td class="ok">✅ 成功</td><td>移动端热榜API，抓取30条在榜问题（回答数/关注数/热度真实抓取）；搜索页登录墙，未采集搜索数据</td></tr>
+  <tr><td>B站</td><td class="ok">✅ 成功</td><td>排行榜API（当日100条，播放/点赞真实抓取）+ 浏览器桥接搜索5组（1Password / 手机摄影点评 / 冬日穿搭 / 副业 / GEO）</td></tr>
   <tr><td>抖音</td><td class="ok">✅ 成功</td><td>热搜词榜API抓取50条（热度值真实抓取）；热词无公开网页链接，相关机会以其他平台链接佐证</td></tr>
-  <tr><td>小红书</td><td class="mid">✅ 成功（有限制）</td><td>浏览器桥接发现页DOM抓取29条笔记（点赞数真实抓取）；搜索需登录态，本次未采集搜索数据</td></tr>
-  <tr><td>Reddit</td><td class="no">❌ 访问失败</td><td>curl直连、curl代理、浏览器桥接（old/new Reddit均报网络策略拦截）、webReader四种方式全部失败，本次未采集该平台数据</td></tr>
-  <tr><td>X</td><td class="no">❌ 访问失败</td><td>登录墙（浏览器无X登录态，跳转到登录页），本次未采集该平台数据</td></tr>
-  <tr><td>GitHub</td><td class="ok">✅ 成功</td><td>index.html已更新，commit推送至远程main分支（详见任务issue日志：commit hash与推送结果）</td></tr>
-  <tr><td>企业微信</td><td class="ok">✅ 成功</td><td>仅推送【商机侦察日报已更新】+ 公网URL（HTTP 200 + errcode=0）</td></tr>
+  <tr><td>小红书</td><td class="mid">✅ 成功（有限制）</td><td>浏览器桥接发现页DOM抓取30条笔记（点赞数真实抓取，链接含xsec_token）；搜索需登录态，本次未采集</td></tr>
+  <tr><td>Hacker News</td><td class="ok">✅ 成功</td><td>Algolia API（Clash代理），首页28条（分数/评论数真实抓取）</td></tr>
+  <tr><td>Product Hunt</td><td class="ok">✅ 成功</td><td>webReader/curl 被Cloudflare拦截；浏览器桥接首页实时榜17+条（票数/评论数真实抓取，11-27 PT日榜尚未生成）；Bifura 产品页浏览器验证可访问</td></tr>
+  <tr><td>YouTube</td><td class="ok">✅ 成功</td><td>浏览器桥接（登录态）首页22条（ytInitialData解析）+ 本周筛选搜索4组（1Password / GEO / Black Friday / 手机摄影），观看数真实抓取</td></tr>
+  <tr><td>Reddit</td><td class="no">❌ 访问失败</td><td>curl RSS（404/429）、JSON API（403）、浏览器桥接 old.reddit 与 www.reddit 均返回 Blocked，四种方式全部失败，本次未采集该平台数据；以搜索引擎索引补充3条真实帖子链接（直连未能打开验证）</td></tr>
+  <tr><td>X</td><td class="no">❌ 访问失败</td><td>浏览器桥接 x.com/explore/trending 跳转登录页（无X登录态），本次未采集；以搜索引擎索引补充2条 status 链接（HTTP 200）</td></tr>
+  <tr><td>GitHub</td><td class="ok">见任务 issue</td><td>index.html 已更新，commit / push 结果（hash 与推送状态）记录于任务 issue 执行日志</td></tr>
+  <tr><td>企业微信</td><td class="ok">见任务 issue</td><td>仅推送【商机侦察日报已更新】+ 公网URL；推送结果记录于任务 issue 执行日志</td></tr>
 </table>
 
-<footer>商机雷达 · 自动生成于 2026-11-26 · Business Scout Daily</footer>
+<footer>商机雷达 · 自动生成于 2026-11-27 · Business Scout Daily</footer>
 </div>
 </body>
 </html>
